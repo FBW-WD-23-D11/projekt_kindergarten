@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav,
+.bottom p {
+    color: #FEEEBB;
+}
+
+.nav {
+
+    width: 100%;
+    padding: 10px 0;
+    background: #25A456;
+    background-image: linear-gradient (to ... , #32A756, #A0BF55, #CBCA55);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.nav p {
+    margin: .4rem;
+
+
+}
+
+.phone,
+.time {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.logo {
+    position: relative;
+    left: 15px;
+}
+
+.burger {
+    position: relative;
+    right: 15px;
+}
+
+/* main */
+main {
+    flex: 1;
+    /* lässt den Hauptinhalt flexibel wachsen und drückt den Footer nach unten */
+}
+
+
+/* footer */
+.bottom {
+    height: 100px;
+    background: #25A456;
+}
+
+.bottom p {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+
+
+
+
+
+/* tablet */
+@media screen and (min-width: 768px) {
+    body {
+     background-color: #25A456;
+    }
+    .time-phone{
+        display: flex;
+        gap: 80px;
+    }
+    
+}
+
+/* pc */
+@media screen and (min-width: 768px) {
+    body {
+     background-color: #25A456;
+    }
+    .time-phone{
+        display: flex;
+        gap: 80px;
+    }
+    
+}
