@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    background: #FCEDB8;
     box-sizing: border-box;
     width: 100vw;
     min-height: 100vh;
@@ -8,35 +9,38 @@ body {
     flex-direction: column;
 }
 
-.nav,
+/* nav */
+.mobil-nav,
+.desktop-nav,
 .bottom p {
     color: #FEEEBB;
 }
 
-.nav {
-
+.mobil-nav {
     width: 100%;
+    height: 5rem;
     padding: 10px 0;
-    background: #25A456;
-    background-image: linear-gradient (to ..., #32A756, #A0BF55, #CBCA55);
+    background: rgb(50, 167, 86);
+    background: linear-gradient(180deg, rgba(50, 167, 86, 1) 0%, rgba(160, 191, 85, 1) 42%, rgba(203, 202, 85, 1) 100%);
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
 
+.desktop-nav {
+    height: 5rem;
 }
 
 .nav p {
     margin: .4rem;
-
-
 }
 
 .phone,
+.envelope,
 .time {
     display: flex;
     align-items: center;
     gap: 10px;
-
 }
 
 .logo {
@@ -57,9 +61,11 @@ main {
 
 
 /* footer */
+
 .bottom {
     height: 100px;
-    background: #25A456;
+    background: rgb(203, 202, 85);
+    background: linear-gradient(180deg, rgba(203, 202, 85, 1) 0%, rgba(160, 191, 85, 1) 52%, rgba(50, 167, 86, 1) 100%);
 }
 
 .bottom p {
@@ -79,6 +85,12 @@ main {
 
 @media screen and (max-width: 767px) {
 
+    /* nav */
+    .envelope {
+        display: none;
+    }
+
+    /* footer */
     .bottom-c,
     .bottom-r {
         display: none;
@@ -86,35 +98,78 @@ main {
 }
 
 
-@media screen and (min-width: 768px) {
-   
-/* nav */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    /* nav */
     .time-phone {
         display: flex;
         gap: 80px;
     }
 
+    .envelope {
+        display: none;
+    }
+
     /* footer */
+
     .bottom {
+        height: 9rem;
         display: flex;
         justify-content: space-around;
+        align-items: flex-start;
     }
+
     .bottom-r p {
         padding: .1rem 0;
         margin: 0;
     }
-    ul{list-style: none;}
+
+    ul {
+        list-style: none;
+    }
 }
 
 /* pc */
-@media screen and (min-width: 768px) {
-    body {
-        background-color: #25A456;
+
+@media screen and (min-width: 1024px) {
+
+    /* nav */
+    .logo {
+        display: none;
+    }
+
+    .mobil-nav {
+        display: flex;
+        justify-content: center;
     }
 
     .time-phone {
         display: flex;
-        gap: 80px;
+        gap: 8rem;
     }
+
+    .burger {
+        display: none;
+    }
+
+
+
+    /* footer */
+    .bottom {
+        height: 9rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .bottom-r p {
+        padding: .1rem 0;
+        margin: 0;
+    }
+
+    ul {
+        list-style: none;
+    }
+
 
 }
