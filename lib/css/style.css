@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     /* background: #FCEDB8;   */
-    background: #cbca55;
+    background: #FFF9D7;
     box-sizing: border-box;
     width: 100vw;
     min-height: 100vh;
@@ -157,13 +157,22 @@ main {
 .first-pic p,
 .second-pic p {
     text-align: center;
-    color: lightgreen;
+    color: #EA985C;
     font-size: 1.8rem;
 }
 
 .first-pic a,
 .second-pic a {
     text-decoration: none;
+}
+
+.back {position: relative;
+text-align: end;
+padding: 0 3rem 2rem 0;}
+
+.back img {
+    height: 2rem;
+    width: auto;
 }
 
 /* footer */
@@ -233,15 +242,11 @@ main {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        color:rgb(27, 221, 59);
+        color: #1bdd3b;
         font-size: 7rem;
         font-family: "Allura", cursive;
         font-weight: 400;
         font-style: normal;
-
-
-
-
         text-shadow: 1px 0px 0px rgb(239, 31, 118), 1px 0px 0px rgb(239, 31, 118), 0px -1px 0px rgb(239, 31, 118), 0px 1px 0px rgb(239, 31, 118), 0px 0px 10px rgb(239, 31, 118);
         font-weight: bold;
         text-align: center;
@@ -293,7 +298,7 @@ main {
     .second-pic {
         display: flex;
         justify-content: space-evenly;
-        background: linear-gradient(180deg, rgba(203, 202, 85, 1) 0%, rgba(160, 191, 85, 1) 25%, rgba(50, 167, 86, 1) 51%, rgba(160, 191, 85, 1) 75%, rgba(203, 202, 85, 1) 100%);
+
     }
 
 
