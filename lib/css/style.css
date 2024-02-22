@@ -26,9 +26,9 @@ body {
     justify-content: space-between;
 }
 
-.desktop-nav {
+/* .desktop-nav {
     height: 5rem;
-}
+} */
 
 .nav p {
     margin: .4rem;
@@ -79,7 +79,7 @@ body {
     border-radius: 0 0 10px 10px;
     transform: scaleY(0) translateX(-100%);
     transition: transform 10.3s ease-in-out;
-    
+
 }
 
 .dropdown-content a {
@@ -149,6 +149,10 @@ main {
     background: linear-gradient(180deg, rgba(203, 202, 85, 1) 0%, rgba(160, 191, 85, 1) 52%, rgba(50, 167, 86, 1) 100%);
 }
 
+.bottom-l {
+    padding-top: .7rem;
+}
+
 .bottom a {
     text-decoration: none;
 }
@@ -172,10 +176,10 @@ main {
     .desktop-nav,
     .groups,
     .bottom-c,
-    .bottom-r  {
+    .bottom-r {
         display: none;
     }
-    
+
 }
 
 /* mq 768 till infinity */
@@ -186,6 +190,11 @@ main {
         flex-direction: row;
         gap: 8rem;
     }
+
+    /* firstpic */
+
+    .first-pic {display:flex;
+    justify-content: space-evenly;}
 
     /* groups */
 
@@ -269,11 +278,11 @@ main {
     }
 
     .desktop-nav {
-        margin: 0 20rem;
+        margin: 0 18rem;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
     }
 
- 
+
 }
