@@ -11,8 +11,8 @@ body {
 
 /* nav */
 .nav,
-.desktop-nav
- {color: #FEEEBB;
+.desktop-nav {
+    color: #FEEEBB;
 }
 
 .mobil-nav {
@@ -53,61 +53,63 @@ body {
     position: relative;
     left: 15px;
 }
+
 /* dropdown menu */
 
 
 .dropdown {
-	position: relative;
-	display: inline-block;
-	right: 35px;
+    position: relative;
+    display: inline-block;
+    right: 35px;
 }
 
 .dropbtn {
-	background-color: #a0bf55;
-	color: #fff;
-	padding: 10px;
-	border: none;
-	cursor: pointer;
+    /* background-color: #9fbf55f7; */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
 }
 
 .dropdown-content {
-	display: none;
-	position: absolute;
+    display: none;
+    position: absolute;
     background: #c3a844;
-	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-	z-index: 1;
-	transform-origin: bottom right; /* Ändere den Ursprung der Transformation */
-	transform: scaleY(0) translateX(-100%);
-	/* Initially closed, verschoben nach links */
-	transition: transform 1.3s ease-in-out; /* Reduziere die Dauer der Transition */
+    /* z-index: 1; */
+    /* transform-origin: bottom right; */
+    /* Ändere den Ursprung der Transformation */
+    transform: scaleY(0) translateX(-100%);
+    /* Initially closed, verschoben nach links */
+    transition: transform 1.3s ease-in-out;
+    /* Reduziere die Dauer der Transition */
 }
 
 .dropdown-content a {
-	color: #fff;
-	padding: 12px 16px;
-	text-decoration: none;
-	display: block;
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
 }
 
 .dropdown-content a:hover {
-	background-color: #555;
+    background-color: #a0bf55;
 }
 
 .dropdown:hover .dropdown-content {
-	display: block;
-	transform: scaleY(1) translateX(-58%);
-	transition: transform 1.3s ease-in-out;
-	/* Open the dropdown with scaleY transition, verschoben nach links */
+    display: block;
+    transform: scaleY(1) translateX(-58%);
+    transition: transform 1.3s ease-in-out;
+    /* Open the dropdown with scaleY transition, verschoben nach links */
 }
 
 /* Optional: Adjust styles for better presentation */
 .dropdown-content {
-	transform-origin: bottom right;
+    transform-origin: bottom right;
 }
 
 /* Optional: Style the dropdown button when hovering over the entire dropdown */
 .dropdown:hover .dropbtn {
-	background-color: #555;
+    background-color: #bce362;
 }
 
 
@@ -128,7 +130,7 @@ main {
 }
 
 .welcome-h1,
-.interest{
+.interest {
     text-align: center;
     color: #EA985C;
 }
@@ -137,13 +139,15 @@ main {
     display: block;
     margin: 0 auto;
 }
-.row{
+
+.row {
     height: 12rem;
     width: 12rem;
     display: block;
     margin: 1rem auto;
 
 }
+
 /* footer */
 
 .bottom {
@@ -246,6 +250,10 @@ main {
         width: 6rem;
         border-radius: 15px;
         background: #EA985C;
+    }
+
+    .desktop-nav button a {
+        color: #ffffff;
     }
 
     .desktop-nav {
