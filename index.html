@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kita St. Martin</title>
     <link rel="stylesheet" href="./lib/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Allura&family=Inter:wght@338&family=Monoton&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -17,20 +22,19 @@
 
             <div class="mobil-nav">
 
-                <div class="logo"><img src="./lib/icons/kindergarten_logo.png" height="80px" width="80px" alt="logo">
+                <div class="logo"><img src="./lib/icons/kindergarten_logo.png" alt="logo">
                 </div>
 
                 <div class="time-phone">
-                    <div class="phone"><img src="./lib/icons/phone-solid.svg" height="15px" width="15px" alt="phone">
+                    <div class="phone"><img src="./lib/icons/phone-solid.svg" alt="phone">
                         <p>03677/465620</p>
                     </div>
 
-                    <div class="envelope"><img src="./lib/icons/envelope-regular.svg" height="15px" width="15px"
-                            alt="umschlag">
+                    <div class="envelope"><img src="./lib/icons/envelope-regular.svg" alt="umschlag">
                         <p>postkasten@kindergarten-st-martin.de</p>
                     </div>
 
-                    <div class="time"><img src="./lib/icons/clock-regular.svg" height="15px" width="15px" alt="clock">
+                    <div class="time"><img src="./lib/icons/clock-regular.svg" alt="clock">
                         <p>07:00 - 17:00 Uhr</p>
                     </div>
 
@@ -54,18 +58,16 @@
             <!-- desktop-nav -->
 
             <div class="desktop-nav">
-                <div class="logo-desktop"><img src="./lib/icons/kindergarten_logo.png" height="80px" width="80px"
-                        alt="logo"></div>
 
                 <button><a href="#">
-                        <p>Startseite</p>
+                        <p>Das Haus</p>
                     </a></button>
                 <button><a href="#">
-                        <p>Einrichtung</p>
+                        <p>Neues</p>
                     </a></button>
-                <button><a href="#">
-                        <p>Neuigkeiten</p>
-                    </a></button>
+
+                <div class="logo-desktop"><img src="./lib/icons/kindergarten_logo.png" alt="logo"></div>
+
                 <button><a href="#">
                         <p>Kontakt</p>
                     </a></button>
@@ -74,50 +76,77 @@
                     </a></button>
             </div>
         </nav>
+        <div class="childs"><img src="./lib/img/childs.png" alt="childs">
+            <div class="text-overlay">Kindergarten St. Martin</div>
+
+        </div>
     </header>
     <main>
         <section>
 
-<!-- willkommen -->
+            <!-- gruppen -->
+
+            <div class="groups">
+                <h2>Unsere Gruppen</h2>
+                <ul class="grouppics">
+                    <li><a href="#"><img src="./lib/icons/maus-skating.jpg" alt="maus">
+                            <p>Die Mäuse</p>
+                        </a>
+                    </li>
+                    <li><a href="#"><img src="./lib/icons/rabit-skating.jpg" alt="hase">
+                            <p>Die Hasen</p>
+                        </a>
+                    </li>
+                    <li><a href="#"><img src="./lib/icons/dolphin-skating.jpg" alt="delfin">
+                            <p>Die Delfine</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- wellcome -->
 
             <div class="wellcome">
                 <h1 class="welcome-h1">Willkommmen in unserem Haus</h1>
-                <img class="house" src="lib/img/Haus-small.jpg" height="200px" width="300px" alt="house-bild">
-                <p class="interest">Interressiert ? Hier erfahren Sie mehr.
+                <img class="house" src="lib/img/Haus-small.jpg" alt="house-bild">
+                <p class="interest">Interressiert ? <span><strong>
+                            <a href="#">Hier</a></strong></span> erfahren Sie mehr.</p>
                 </p>
             </div>
 
-<!-- gruppen -->
 
-<div class="groups">
-    <ul class="grouppics">
-        <li><a href="#"><img src="./lib/icons/mouse.png" height="85px" width="85px"alt="maus"></a>
-        </li>
-        <li><a href="#"><img src="./lib/icons/rabbit.jpg" height="85px" width="85px"alt="hase"></a>
-        </li>
-        <li><a href="#"><img src="./lib/icons/delfin.jpg" height="85px" width="85px"alt="delfin"></a>
-        </li>
-    </ul>
-</div>
 
-<!-- erste bilderreihe -->
+            <!-- rows -->
 
             <div class="first-pic">
-                <a href="#">  <img class="row" src="./lib/img/Team.webp" alt="team" title="Team"></a>
-                <a href="#"><img class="row" src="./lib/img/tischfarben.webp" alt="wasserfarben" title="Aktivitäten"></a>
-                <a href="#">  <img class="row" src="./lib/img/wald.webp" alt="waldspaziergang" title="Konzept"></a>
+                <a href="#"> <img class="row" src="./lib/img/Team.webp" alt="team" title="Team">
+                    <p>Unser Team</p>
+                </a>
+                <a href="#"><img class="row" src="./lib/img/tischfarben.webp" alt="wasserfarben" title="Aktivitäten">
+                    <p>Aktivitäten</p>
+                </a>
+                <a href="#"> <img class="row" src="./lib/img/wald.webp" alt="waldspaziergang" title="Konzept">
+                    <p>Unser Konzept</p>
+                </a>
 
             </div>
-
-
-
-
-
-
+            <div class="second-pic">
+                <a href="#"> <img class="row" src="./lib/img/team-spirit.jpg" alt="team" title="Team">
+                    <p>Elternbeirat</p>
+                </a>
+                <a href="#"><img class="row" src="./lib/img/crosses.jpg" alt="wasserfarben" title="Aktivitäten">
+                    <p>Unser Träger</p>
+                </a>
+                <a href="#"> <img class="row" src="./lib/img/foerder.jpg" alt="waldspaziergang" title="Konzept">
+                    <p>Förderverein</p>
+                </a>
+            </div>
 
 
         </section>
     </main>
+
+    <!-- footer -->
 
     <footer>
         <div class="bottom">
