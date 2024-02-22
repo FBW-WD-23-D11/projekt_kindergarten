@@ -78,9 +78,8 @@ body {
     text-align: center;
     border-radius: 0 0 10px 10px;
     transform: scaleY(0) translateX(-100%);
-    /* wird nach links verschoben */
-    transition: transform 1.3s ease-in-out;
-    /* Reduziere die Dauer der Transition */
+    transition: transform 10.3s ease-in-out;
+    
 }
 
 .dropdown-content a {
@@ -98,22 +97,12 @@ body {
     display: block;
     transform: scaleY(1) translateX(-40%);
     transition: transform 1.3s ease-in-out;
-    /* Open the dropdown with scaleY transition, verschoben nach links */
+    /* Open the dropdown with scaleY transition, move left */
 }
 
-/* Optional: Adjust styles for better presentation */
-/* .dropdown-content {
-    transform-origin: bottom right;
-} */
-
-/* Optional: Style the dropdown button when hovering over the entire dropdown */
 .dropdown:hover .dropbtn {
     background-color: #bce362;
 }
-
-
-
-
 
 /* -------- */
 
