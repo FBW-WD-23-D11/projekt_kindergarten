@@ -74,12 +74,11 @@ body {
 .dropdown-content {
     display: none;
     position: absolute;
-    background: #c3a844;
-    /* z-index: 1; */
-    /* transform-origin: bottom right; */
-    /* Ändere den Ursprung der Transformation */
+    background: #C0C755;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
     transform: scaleY(0) translateX(-100%);
-    /* Initially closed, verschoben nach links */
+    /* wird nach links verschoben */
     transition: transform 1.3s ease-in-out;
     /* Reduziere die Dauer der Transition */
 }
@@ -97,15 +96,15 @@ body {
 
 .dropdown:hover .dropdown-content {
     display: block;
-    transform: scaleY(1) translateX(-58%);
+    transform: scaleY(1) translateX(-40%);
     transition: transform 1.3s ease-in-out;
     /* Open the dropdown with scaleY transition, verschoben nach links */
 }
 
 /* Optional: Adjust styles for better presentation */
-.dropdown-content {
+/* .dropdown-content {
     transform-origin: bottom right;
-}
+} */
 
 /* Optional: Style the dropdown button when hovering over the entire dropdown */
 .dropdown:hover .dropbtn {
@@ -117,17 +116,17 @@ body {
 
 
 /* -------- */
-a {
-    text-decoration: none;
-}
+
 
 /* main */
 
 main {
-    margin: 0 1rem;
     flex: 1;
-    /* lässt den Hauptinhalt flexibel wachsen und drückt den Footer nach unten */
+
 }
+
+/* willkommen */
+
 
 .welcome-h1,
 .interest {
@@ -140,6 +139,11 @@ main {
     margin: 0 auto;
 }
 
+
+
+/* erste bildreihe */
+
+
 .row {
     height: 12rem;
     width: 12rem;
@@ -151,9 +155,13 @@ main {
 /* footer */
 
 .bottom {
-    height: 100px;
+    height: 9rem;
     background: rgb(203, 202, 85);
     background: linear-gradient(180deg, rgba(203, 202, 85, 1) 0%, rgba(160, 191, 85, 1) 52%, rgba(50, 167, 86, 1) 100%);
+}
+
+.bottom a {
+    text-decoration: none;
 }
 
 .bottom p {
@@ -164,57 +172,54 @@ main {
 
 
 
-/* tablet */
+/* @medias */
+
 
 @media screen and (max-width: 767px) {
 
     /* nav */
-    .envelope {
-        display: none;
-    }
-
-    .logo-desktop {
-        display: none;
-    }
-
-    .desktop-nav {
-        display: none;
-    }
-
-    /* footer */
+    .envelope,
+    .logo-desktop,
+    .desktop-nav,
+    .groups,
     .bottom-c,
-    .bottom-r {
+    .bottom-r  {
         display: none;
     }
+    
 }
 
+/* mq 768 till infinity */
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-
-    /* nav */
+@media screen and (min-width: 768px) {
     .time-phone {
         display: flex;
         flex-direction: row;
-        gap: 80px;
+        gap: 8rem;
     }
 
-    .envelope {
-        display: none;
+    /* groups */
+
+    .groups {
+        width: 100%;
+        height: 8rem;
+        background: linear-gradient(180deg, rgba(50, 167, 86, 1) 0%, #a0bf55 42%, rgba(203, 202, 85, 1) 100%);
+
     }
 
-    .logo-desktop {
-        display: none;
+    .grouppics {
+        display: flex;
+        justify-content: center;
+        padding-top: 1.2rem;
+        gap: 5rem;
     }
 
-    .desktop-nav {
-        display: none;
+    .grouppics img {
+        border-radius: 50%;
     }
-
 
     /* footer */
-
     .bottom {
-        height: 9rem;
         display: flex;
         justify-content: space-around;
         align-items: flex-start;
@@ -230,12 +235,30 @@ main {
     }
 }
 
+
+/* tablet */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    /* nav */
+
+    .envelope,
+    .logo-desktop,
+    .desktop-nav {
+        display: none;
+    }
+
+
+
+}
+
 /* pc */
 
 @media screen and (min-width: 1024px) {
 
     /* nav */
-    .logo {
+    .logo,
+    .dropdown {
         display: none;
     }
 
@@ -263,37 +286,5 @@ main {
         align-items: center;
     }
 
-    .time-phone {
-        display: flex;
-        flex-direction: row;
-        gap: 8rem;
-    }
-
-    .dropdown {
-        display: none;
-    }
-
-
-
-    /* footer */
-    .bottom {
-        height: 9rem;
-        display: flex;
-        justify-content: space-around;
-        align-items: flex-start;
-    }
-
-    .bottom-r p {
-        padding: .1rem 0;
-        margin: 0;
-    }
-
-    ul {
-        list-style: none;
-    }
-
-
+ 
 }
-
-
-/* schriften */
