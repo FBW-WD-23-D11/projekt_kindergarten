@@ -10,7 +10,7 @@ body {
 }
 
 /* nav */
-.mobil-nav,
+.nav,
 .desktop-nav,
 .bottom p {
     color: #FEEEBB;
@@ -43,23 +43,51 @@ body {
     gap: 10px;
 }
 
-.logo {
+.time-phone {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.logo,
+.logo-desktop {
     position: relative;
     left: 15px;
 }
 
 .burger {
     position: relative;
-    right: 15px;
+    right: 25px;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* main */
+
 main {
+    margin: 0 1rem;
     flex: 1;
     /* lässt den Hauptinhalt flexibel wachsen und drückt den Footer nach unten */
 }
 
+main h1 {
+    text-align: center;
+    color: #EA985C;
+}
 
+.wellcome img {
+    display: block;
+    margin: 0 auto;
+}
+.row{
+    height: 12rem;
+    width: 12rem;
+    display: block;
+    margin: 1rem auto;
+
+}
 /* footer */
 
 .bottom {
@@ -73,12 +101,6 @@ main {
     padding-top: 1rem;
 }
 
-.bottom-l {}
-
-.bottom-c {}
-
-.bottom-r {}
-
 
 
 /* tablet */
@@ -87,6 +109,14 @@ main {
 
     /* nav */
     .envelope {
+        display: none;
+    }
+
+    .logo-desktop {
+        display: none;
+    }
+
+    .desktop-nav {
         display: none;
     }
 
@@ -103,12 +133,22 @@ main {
     /* nav */
     .time-phone {
         display: flex;
+        flex-direction: row;
         gap: 80px;
     }
 
     .envelope {
         display: none;
     }
+
+    .logo-desktop {
+        display: none;
+    }
+
+    .desktop-nav {
+        display: none;
+    }
+
 
     /* footer */
 
@@ -141,10 +181,26 @@ main {
     .mobil-nav {
         display: flex;
         justify-content: center;
+        height: 2rem;
+    }
+
+    .desktop-nav button {
+        height: 2.2rem;
+        width: 6rem;
+        border-radius: 15px;
+        background: #EA985C;
+    }
+
+    .desktop-nav {
+        margin: 0 20rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
     }
 
     .time-phone {
         display: flex;
+        flex-direction: row;
         gap: 8rem;
     }
 
@@ -173,3 +229,6 @@ main {
 
 
 }
+
+
+/* schriften */
