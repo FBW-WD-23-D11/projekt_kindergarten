@@ -5,8 +5,8 @@ body {
     box-sizing: border-box;
     width: 100vw;
     min-height: 100vh;
-  
-    
+
+
 }
 
 /* nav */
@@ -136,22 +136,61 @@ body {
     text-align: center;
 }
 
+/* ------ code here ----- */
+
 /* main */
 
 
 
+h1,
+h2,
+h3,
+h4,
+p {
+    text-align: center;
+    margin: 20px 10%;
+}
 
 
+.house img {
+    max-width: 80%;
+    display: block;
+    margin: 1rem auto;
+}
+
+.mouse,
+.rabit,
+.dolphin {
+    border-radius: 50%;
+    height: 6.2rem;
+    width: auto;
+    display: block;
+    margin: 1rem auto;
+}
+
+.grouppictures {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.grouppictures img {
+    width: 70%;
+}
+
+.row {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+}
 
 
+/*  */
 
 
-
-
-
-
-
-
+/* back 2 top */
 
 .back {
     position: relative;
@@ -164,7 +203,7 @@ body {
     width: auto;
 }
 
-/* footer */
+/* footer  */
 
 .bottom {
     height: 11rem;
@@ -195,8 +234,7 @@ body {
     .logo-desktop,
     .desktop-nav,
     .bottom-c,
-    .bottom-r
-     {
+    .bottom-r {
         display: none;
     }
 
@@ -218,13 +256,15 @@ body {
         font-size: 5rem;
     }
 
+    /* code in here */
+
   
 
-   
 
 
 
 
+    /* ---------------------------------- */
     /* footer */
     .bottom {
         display: flex;
@@ -254,7 +294,7 @@ body {
     .desktop-nav {
         display: none;
     }
-
+   
 }
 
 /* pc */
@@ -303,7 +343,17 @@ body {
         font-size: 7rem;
     }
 
+    /* code here */
 
+    .grouppictures {
+        flex-direction: row;
+        justify-content: center;
+    
+    }
+    .grouppictures img,
+    .row {
+        width: 30%;
+    }
 
 }
 
@@ -314,4 +364,10 @@ body {
     .desktop-nav {
         margin: 1rem 12rem;
     }
+    .grouppictures img,
+    .row {
+        /* width:30rem; */
+        height: auto;
+    }
+    
 }
