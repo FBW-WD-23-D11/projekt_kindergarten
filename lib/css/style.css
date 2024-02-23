@@ -32,13 +32,13 @@ body {
 }
 
 .nav .mobil-nav p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .mobil-nav .logo img {
     height: 7rem;
     width: auto;
-    margin-left: 1rem;
+    margin-left: .2rem;
 }
 
 .phone,
@@ -64,13 +64,14 @@ body {
 .dropdown {
     position: relative;
     display: inline-block;
-    right: 35px;
+    right: .6rem;
+    z-index: 2;
 }
 
 .dropbtn {
     /* background-color: #9fbf55f7; */
     color: #fff;
-    padding: 10px;
+    padding: 17px;
     border: none;
     cursor: pointer;
 }
@@ -88,7 +89,7 @@ body {
 
 .dropdown-content a {
     color: #fff;
-    padding: 12px 16px;
+    padding: 5px 16px;
     text-decoration: none;
     display: block;
 }
@@ -109,7 +110,32 @@ body {
 }
 
 /* -------- */
+/* header childs */
+.childs {
+    position: relative;
 
+}
+
+.childs img {
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.childs .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #1bdd3b;
+    font-size: 3rem;
+    font-family: "Allura", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 1px 0px 0px rgb(239, 31, 118), 1px 0px 0px rgb(239, 31, 118), 0px -1px 0px rgb(239, 31, 118), 0px 1px 0px rgb(239, 31, 118), 0px 0px 10px rgb(239, 31, 118);
+    font-weight: bold;
+    text-align: center;
+}
 
 /* main */
 main {
@@ -166,9 +192,11 @@ main {
     text-decoration: none;
 }
 
-.back {position: relative;
-text-align: end;
-padding: 0 3rem 2rem 0;}
+.back {
+    position: relative;
+    text-align: end;
+    padding: 0 3rem 2rem 0;
+}
 
 .back img {
     height: 2rem;
@@ -225,31 +253,9 @@ padding: 0 3rem 2rem 0;}
         gap: 8rem;
     }
 
-    /* header childs */
-    .childs {
-        position: relative;
-
-    }
-
-    .childs img {
-        display: block;
-        width: 100%;
-        margin-top: 1rem;
-    }
-
-    .text-overlay {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: #1bdd3b;
-        font-size: 7rem;
-        font-family: "Allura", cursive;
-        font-weight: 400;
-        font-style: normal;
-        text-shadow: 1px 0px 0px rgb(239, 31, 118), 1px 0px 0px rgb(239, 31, 118), 0px -1px 0px rgb(239, 31, 118), 0px 1px 0px rgb(239, 31, 118), 0px 0px 10px rgb(239, 31, 118);
-        font-weight: bold;
-        text-align: center;
+    /* header */
+    .childs .text-overlay {
+        font-size: 5rem;
     }
 
     /* groups */
@@ -358,7 +364,7 @@ padding: 0 3rem 2rem 0;}
     }
 
     .desktop-nav {
-        margin: 1rem 18rem;
+        margin: 1rem 1rem;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -378,10 +384,20 @@ padding: 0 3rem 2rem 0;}
         text-decoration: none;
     }
 
+    /* header */
+    .childs .text-overlay {
+        font-size: 7rem;
+    }
 
 
     .house {
         max-width: 50%;
         height: auto;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .desktop-nav {
+        margin: 1rem 12rem;
     }
 }
