@@ -137,7 +137,18 @@ body {
 }
 
 /* main */
+h1,h2,p{margin-bottom: 1rem;
+    text-align: center;
 
+}
+h1{font-size: 2rem;}
+h2{
+
+}
+
+.liste {display: flex;
+flex-direction: column;
+align-items: center;}
 
 
 
@@ -237,7 +248,7 @@ body {
         margin: 0;
     }
 
-   .bottom ul {
+    .bottom ul {
         list-style: none;
     }
 }
