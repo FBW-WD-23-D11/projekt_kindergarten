@@ -1,3 +1,5 @@
+
+
 body {
     margin: 0;
     padding: 0;
@@ -146,11 +148,29 @@ h1,
 h2,
 h3,
 h4,
-p {
+.house .housetext,
+.group .grouptext,
+.rooms .grouptext {
     text-align: center;
-    margin: 20px 10%;
+    margin: 2rem 10%;
+    color: #EA985C;
 }
 
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.house .housetext,
+.house .housetext,
+.group .grouptext,
+.rooms .grouptext,h3 {
+    font-size: 1.5rem;
+
+}
 
 .house img {
     max-width: 80%;
@@ -258,7 +278,7 @@ p {
 
     /* code in here */
 
-  
+
 
 
 
@@ -277,7 +297,7 @@ p {
         margin: 0;
     }
 
-    ul {
+    .bottom ul {
         list-style: none;
     }
 }
@@ -294,7 +314,7 @@ p {
     .desktop-nav {
         display: none;
     }
-   
+
 }
 
 /* pc */
@@ -348,8 +368,9 @@ p {
     .grouppictures {
         flex-direction: row;
         justify-content: center;
-    
+
     }
+
     .grouppictures img,
     .row {
         width: 30%;
@@ -364,10 +385,11 @@ p {
     .desktop-nav {
         margin: 1rem 12rem;
     }
+
     .grouppictures img,
     .row {
         /* width:30rem; */
         height: auto;
     }
-    
+
 }
