@@ -158,9 +158,9 @@ p {
     margin: 1rem auto;
 }
 
-.mouse,
-.rabit,
-.dolphin {
+#mouse,
+#rabit,
+#dolphin {
     border-radius: 50%;
     height: 6.2rem;
     width: auto;
