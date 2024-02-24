@@ -1,3 +1,12 @@
+@font-face {
+    font-family: "Allura";
+    src: url("../fonts/Allura-Regular.ttf") format("truetype");
+
+    font-family: "roboto";
+    src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+
 body {
     margin: 0;
     padding: 0;
@@ -8,6 +17,13 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+}
+
+/*-------neu----------*/
+.datenschutz {
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 /* nav */
@@ -222,6 +238,48 @@ main {
     font-size: 1.3rem;
 }
 
+/*-------neu----------*/
+.grid {
+    display: grid;
+    max-width: 1200px;
+    grid-gap: 20px;
+    margin: 0 auto;
+}
+
+.grid div {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#datenschutz {
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#datenschutz h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    text-transform: uppercase;
+}
+
+#datenschutz h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#datenschutz p {
+    text-align: center;
+}
+
+#datenschutz ul li {
+    text-align: center;
+    list-style: none;
+}
 
 
 /* @medias */
