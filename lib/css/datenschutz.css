@@ -267,15 +267,19 @@ main {
 }
 
 #datenschutz h3 {
+    font-family: roboto, "Roboto-Regular", sans-serif;
+    font-size: 20px;
     text-align: center;
     margin-bottom: 10px;
 }
 
 #datenschutz p {
+    font-family: roboto, "Roboto-Regular", sans-serif;
     text-align: center;
 }
 
 #datenschutz ul li {
+    font-family: roboto, "Roboto-Regular", sans-serif;
     text-align: center;
     list-style: none;
 }
