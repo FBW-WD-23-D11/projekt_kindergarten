@@ -1,29 +1,29 @@
 @font-face {
     font-family: "Allura";
-    src: url("../fonts/Allura-Regular.ttf") format("truetype");
+    src: url("../fonts/Allura/Allura-Regular.ttf") format("truetype");
+}
 
+@font-face {
     font-family: "roboto";
     src: url("../fonts/Roboto-Regular.ttf") format("truetype");
 }
 
-
-
 body {
     margin: 0;
     padding: 0;
-    /* background: #FCEDB8;   */
     background: #FFF9D7;
     box-sizing: border-box;
     width: 100vw;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    font-family: "arial";
+
+
 }
 
 /* nav */
-.nav,
-.desktop-nav {
+.nav {
     color: #FEEEBB;
+
 }
 
 .mobil-nav {
@@ -57,6 +57,11 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+.envelope a {
+    text-decoration: none;
+    color: #FEEEBB;
 }
 
 .time-phone {
@@ -119,8 +124,8 @@ body {
     background-color: #bce362;
 }
 
-/* -------- */
 /* header childs */
+
 .childs {
     position: relative;
 
@@ -132,11 +137,11 @@ body {
     margin-top: 1rem;
 }
 
-.childs .text-overlay h1 {
+.childs .text-overlay {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -100%);
+    transform: translate(-50%, -50%);
     color: #1bdd3b;
     font-size: 3rem;
     font-family: "Allura", cursive;
@@ -148,59 +153,74 @@ body {
 }
 
 /* main */
-main {
-    flex: 1;
 
+.aktion {
+    margin: 0 1rem;
 }
 
-/* wellcome */
-.welcome-h1 {
-    font-size: 1.8rem;
-}
-
-.welcome-h1,
-.interest {
+h1 {
     text-align: center;
+    font-size: 2.5rem;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+h1,
+h2
+ {
     color: #EA985C;
 }
 
-.wellcome img {
-    display: block;
-    margin: 0 auto;
+.aktion article {
+    margin-top: 3rem;
 }
 
-.wellcome p {
-    font-size: 1.7rem;
-}
-
-.house {
-    max-width: 80%;
-}
-
-.wellcome a {
-    text-decoration: none;
-}
-
-/* rows */
-
-.row {
-    height: 12rem;
-    width: 12rem;
-    display: block;
-    margin: 1rem auto;
-}
-
-.first-pic p,
-.second-pic p {
-    text-align: center;
+.aktion article p {
+    font-size: 1.5rem;
     color: #EA985C;
-    font-size: 1.8rem;
 }
 
-.first-pic a,
-.second-pic a {
-    text-decoration: none;
+#schwimmen-1,
+#schwimmen-2,
+#schwimmen-3 {
+    height: 10rem;
+    width: auto;
 }
+
+#schwimmen-1 {
+    float: left;
+    margin-right: 16px;
+
+
+}
+
+#schwimmen-2 {
+    float: right;
+    margin-left: 16px;
+
+}
+
+#schwimmen-3 {
+    float: left;
+    margin-right: 16px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* back 2 top */
 
 .back {
     position: relative;
@@ -243,10 +263,8 @@ main {
     .envelope,
     .logo-desktop,
     .desktop-nav,
-    .groups,
     .bottom-c,
-    .bottom-r,
-    .second-pic {
+    .bottom-r {
         display: none;
     }
 
@@ -268,54 +286,9 @@ main {
         font-size: 5rem;
     }
 
-    /* groups */
 
-    .groups {
-        width: 100%;
-        height: 14rem;
-        background: rgb(203, 202, 85);
-        background: linear-gradient(180deg, rgba(203, 202, 85, 1) 0%, rgba(160, 191, 85, 1) 25%, rgba(50, 167, 86, 1) 51%, rgba(160, 191, 85, 1) 75%, rgba(203, 202, 85, 1) 100%);
 
-    }
 
-    .groups>h2 {
-        text-align: center;
-        padding-top: 1rem;
-
-    }
-
-    .groups a {
-        color: green;
-        text-decoration: none;
-        font-size: 1.4rem;
-    }
-
-    .groups p {
-        margin: 0;
-    }
-
-    .grouppics {
-        display: flex;
-        justify-content: center;
-        padding-top: rem;
-        gap: 12rem;
-    }
-
-    .grouppics img {
-        border-radius: 50%;
-        height: 6.2rem;
-        width: auto;
-
-    }
-
-    /* rows */
-
-    .first-pic,
-    .second-pic {
-        display: flex;
-        justify-content: space-evenly;
-
-    }
 
 
 
@@ -332,7 +305,7 @@ main {
         margin: 0;
     }
 
-    ul {
+    .bottom ul {
         list-style: none;
     }
 }
@@ -350,7 +323,9 @@ main {
         display: none;
     }
 
-
+    .aktion {
+        margin: 0 8rem;
+    }
 }
 
 /* pc */
@@ -379,37 +354,50 @@ main {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-
     }
 
     .desktop-nav button {
         height: 2.9rem;
         width: 8rem;
-        border-radius: 15px;
-        background: #EA985C;
+        border-radius: 30px;
+        border: none;
+        background: rgb(50, 167, 86);
+        background: linear-gradient(180deg, rgba(50, 167, 86, 1) 0%, #a0bf55 42%, rgba(203, 202, 85, 1) 100%);
+        transition: background 0.9s ease;
+        box-shadow: 12px -5px 10px #0fa93d;
+    }
+
+    .desktop-nav button:hover {
+        background: #32a756;
+        transition: background 0.9s ease;
     }
 
     .desktop-nav button a {
         color: #ffffff;
         font-size: 1.3rem;
         text-decoration: none;
+
     }
+
+
 
     /* header */
     .childs .text-overlay {
         font-size: 7rem;
     }
 
-
-    .house {
-        max-width: 50%;
-        height: auto;
+    .aktion {
+        margin: 0 15rem;
     }
+
+
 }
+
+
+
 
 @media screen and (min-width: 1600px) {
     .desktop-nav {
         margin: 1rem 12rem;
-
     }
 }
