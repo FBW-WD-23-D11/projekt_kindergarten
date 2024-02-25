@@ -401,6 +401,31 @@ main {
         display: none;
     }
 
+    .logo img {
+        height: 7rem;
+        width: auto;
+        margin-left: .2rem;
+    }
+
+    #datenschutz {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 1rem;
+    }
+
+    #datenschutz h1 {
+        font-size: 2.5rem;
+    }
+
+    #datenschutz h3 {
+        font-size: 1.5rem;
+    }
+
+    #datenschutz p {
+        font-size: 1.3rem;
+    }
+
 }
 
 /* pc */
@@ -454,6 +479,21 @@ main {
     .house {
         max-width: 50%;
         height: auto;
+    }
+
+    #datenschutz {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 1rem;
+    }
+
+    #datenschutz h1 {
+        font-size: 2.5rem;
+    }
+
+    #datenschutz h3 {
+        font-size: 1.5rem;
     }
 }
 
