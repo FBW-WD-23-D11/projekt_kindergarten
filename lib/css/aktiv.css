@@ -369,6 +369,7 @@ h2
 
     .desktop-nav button:hover {
         background: #32a756;
+        transition: background 0.9s ease;
     }
 
     .desktop-nav button a {
