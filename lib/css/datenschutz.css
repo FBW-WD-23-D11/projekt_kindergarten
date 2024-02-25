@@ -141,13 +141,13 @@ body {
     transform: translate(-50%, -50%);
     color: #1bdd3b;
     font-size: 3rem;
-    font-family: Allura, "Allura-Regular", cursive;
-    */ font-weight: 400;
+    font-family: "Allura", cursive;
+    font-weight: 400;
     font-style: normal;
     text-shadow: 1px 0px 0px rgb(239, 31, 118), 1px 0px 0px rgb(239, 31, 118), 0px -1px 0px rgb(239, 31, 118), 0px 1px 0px rgb(239, 31, 118), 0px 0px 10px rgb(239, 31, 118);
     font-weight: bold;
     text-align: center;
-    */
+    width: 100%;
 }
 
 
