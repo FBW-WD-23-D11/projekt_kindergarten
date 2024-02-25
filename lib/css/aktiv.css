@@ -1,27 +1,29 @@
 @font-face {
     font-family: "Allura";
     src: url("../fonts/Allura/Allura-Regular.ttf") format("truetype");
-
-    /* font-family: "roboto";
-    src: url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype"); */
 }
 
+@font-face {
+    font-family: "roboto";
+    src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+}
 
 body {
     margin: 0;
     padding: 0;
     background: #FFF9D7;
-    background-size: 100vw;
     box-sizing: border-box;
     width: 100vw;
     min-height: 100vh;
+    font-family: "arial";
+
 
 }
 
 /* nav */
-.nav,
-.desktop-nav {
+.nav {
     color: #FEEEBB;
+
 }
 
 .mobil-nav {
@@ -55,6 +57,11 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+.envelope a {
+    text-decoration: none;
+    color: #FEEEBB;
 }
 
 .time-phone {
@@ -147,39 +154,63 @@ body {
 
 /* main */
 
-
-h1,
-.team {
-    text-align: center;
+.aktion {
+    margin: 0 1rem;
 }
 
 h1 {
-    font-size: 2rem;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
 }
 
 h1,
-h2 {
-    margin-top: 5rem;
+h2
+ {
     color: #EA985C;
 }
 
-.team p {
+.aktion article {
+    margin-top: 3rem;
+}
+
+.aktion article p {
     font-size: 1.5rem;
+    color: #EA985C;
 }
 
-.leitung,
-.gruppen {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-content: space-evenly;
-}
-
-.grouppic {
-    border-radius: 50%;
-    height: 4rem;
+#schwimmen-1,
+#schwimmen-2,
+#schwimmen-3 {
+    height: 10rem;
     width: auto;
 }
+
+#schwimmen-1 {
+    float: left;
+    margin-right: 16px;
+
+
+}
+
+#schwimmen-2 {
+    float: right;
+    margin-left: 16px;
+
+}
+
+#schwimmen-3 {
+    float: left;
+    margin-right: 16px;
+
+}
+
+
 
 
 
@@ -255,14 +286,7 @@ h2 {
         font-size: 5rem;
     }
 
-    .leitung,
-    .gruppen {
-        flex-direction: row;
-    }
 
-    .grouppic {
-        height: 5rem;
-    }
 
 
 
@@ -299,6 +323,9 @@ h2 {
         display: none;
     }
 
+    .aktion {
+        margin: 0 8rem;
+    }
 }
 
 /* pc */
@@ -332,21 +359,35 @@ h2 {
     .desktop-nav button {
         height: 2.9rem;
         width: 8rem;
-        border-radius: 15px;
-        background: #EA985C;
+        border-radius: 30px;
+        border: none;
+        background: rgb(50, 167, 86);
+        background: linear-gradient(180deg, rgba(50, 167, 86, 1) 0%, #a0bf55 42%, rgba(203, 202, 85, 1) 100%);
+        transition: background 0.9s ease;
+        box-shadow: 12px -5px 10px #0fa93d;
+    }
+
+    .desktop-nav button:hover {
+        background: #32a756;
     }
 
     .desktop-nav button a {
         color: #ffffff;
         font-size: 1.3rem;
         text-decoration: none;
+
     }
+
+
 
     /* header */
     .childs .text-overlay {
         font-size: 7rem;
     }
 
+    .aktion {
+        margin: 0 15rem;
+    }
 
 
 }
