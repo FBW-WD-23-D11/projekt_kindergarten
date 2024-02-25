@@ -316,6 +316,13 @@ main {
         font-size: 5rem;
     }
 
+    .childs img {
+        display: block;
+        height: 100%;
+        width: 100%;
+
+    }
+
     /* groups */
 
     .groups {
@@ -326,7 +333,7 @@ main {
 
     }
 
-    .groups>h2 {
+    .groups h2 {
         text-align: center;
         padding-top: 1rem;
 
@@ -399,6 +406,7 @@ main {
     }
 
     .logo img {
+        display: block;
         height: 7rem;
         width: auto;
         margin-left: .2rem;

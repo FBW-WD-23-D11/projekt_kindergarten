@@ -1,4 +1,12 @@
+@font-face {
+    font-family: "Allura";
+    src: url("../fonts/Allura-Regular.ttf") format("truetype");
+}
 
+@font-face {
+    font-family: "roboto";
+    src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+}
 
 body {
     margin: 0;
@@ -151,6 +159,7 @@ h4,
 .house .housetext,
 .group .grouptext,
 .rooms .grouptext {
+    font-family: roboto, "Roboto-Regular", sans-serif;
     text-align: center;
     margin: 2rem 10%;
     color: #EA985C;
@@ -167,7 +176,8 @@ h2 {
 .house .housetext,
 .house .housetext,
 .group .grouptext,
-.rooms .grouptext,h3 {
+.rooms .grouptext,
+h3 {
     font-size: 1.5rem;
 
 }
