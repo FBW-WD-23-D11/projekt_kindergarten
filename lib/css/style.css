@@ -278,7 +278,7 @@ main {
 
     }
 
-    .groups>h2 {
+    .groups h2 {
         text-align: center;
         padding-top: 1rem;
 
