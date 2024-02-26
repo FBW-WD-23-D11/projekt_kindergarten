@@ -1,0 +1,610 @@
+/* Feld Ansprechpartner auseinander ziehen */
+/* hover Sachen anschauen */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GOOGLE MAPS... */
+.container {
+    background-color: green;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+iframe {
+    width: 100%;
+}
+
+.hintergrund_beige_gesamt {
+    background-color: beige;
+}
+
+/* weitere Informationen unter Google-maps...  */
+.infos_unter_google {
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+}
+
+.text_unter_googlemaps {
+    background-color: green;
+}
+
+.h2_fragen_anmerkungen_wünsche {
+    /* background-color: red; */
+    font-size: 2rem;
+    padding: 10px 10px 5px 10px;
+}
+
+.text_fr_an_wünsche {
+    /* background-color: blue; */
+    font-size: 20px;
+    padding: 10px 10px 10px 10px;
+}
+
+.summary_kontaktinfos_unter_googlemaps {
+    margin: 20px 10px;
+}
+
+#summary_email_kita,
+#summary_adresse_kita,
+#summary_tel_kita {
+    background-color: green;
+    border-radius: 5px;
+    padding: 0 30px;
+    margin: 5px 5px;
+}
+
+i {
+    padding: 5px 0;
+}
+
+.kontakt_daten {
+    font-size: 20px;
+}
+
+/* .kontaktinfos_unter_googlemaps {
+    background-color: aquamarine;
+}
+
+#name_kita {
+    background-color: beige;
+    font-size: 18px;
+    padding-top: px;
+}
+
+#str_kita {
+    background-color: blueviolet;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+#plz_kita {
+    background-color: blue;
+} */
+
+/* FELD ANSPRECHPARTNER */
+.ansp_feld {
+    /* background-color: blue; */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    /* padding-top: 20px; */
+}
+
+.ansprechpartner {
+    background-color: #95ed9579;
+    border: 1px ridge green;
+    border-radius: 5px;
+    width: 80%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#h2_ansprechpartner {
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+#kita-leiterin,
+#stellv_kita_leiterin {
+    padding: 10px 0;
+}
+
+#kontakt_links {
+    display: flex;
+    flex-direction: column;
+}
+
+#kontakt_links_tel {
+    padding-top: 15px;
+}
+
+#kontakt_links_fax,
+#kontakt_links_email {
+    padding: 15px 0;
+}
+
+/* FELD FORMULAR */
+.formular {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: #95ed9579;
+    border: 1px ridge green;
+    border-radius: 5px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.eingabe_name {
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+
+.eingabe_email {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+
+.eingabe_nachricht {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+
+#fullName,
+#email,
+#message {
+    border: none;
+    width: 90%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 3px;
+}
+
+#fullName:hover,
+#email:hover,
+#message:hover {
+    border-color: yellowgreen;
+}
+
+button {
+    width: 30%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    color: blue;
+}
+
+button:active {
+    background-color: darkgreen;
+}
+
+button:visited {
+    background-color: violet;
+}
+
+/* HÄUFIG GESTELLTE FRAGE */
+.fragen {
+    padding-bottom: 20px;
+}
+
+.header_p {
+    text-align: center;
+}
+
+#h1_header {
+    padding: 10px;
+    margin-top: 1.8rem;
+}
+
+#h1_p {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.fragen_1-8 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.summary_häufig_gestellte_Fragen {
+    background-color: green;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+article {
+    margin: 12px;
+}
+
+/* FELDER MIT LINKS ZU INTERNEN ANDEREN SEITEN  */
+.links_int_seiten {
+    text-align: center;
+}
+
+.h2_header_int_links {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 1.5rem;
+}
+
+.einzel_links_int_seiten {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+#link_unser_konzept,
+#link_unsere_gruppenr,
+#unser_team {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 20px;
+    color: black;
+    background-color: green;
+    padding: 10px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 481px) {
+    /* FELD FORMULAR */
+    button {
+        font-size: 14px;
+        padding: 5px 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .h2_fragen_anmerkungen_wünsche {
+        padding: 5px 10px;
+        font-size: 2rem;
+    }
+    .text_fr_an_wünsche {
+        font-size: 20px;
+        padding: 5px 10px;
+    }
+    .adresse_unter_googlemaps {
+        padding: 10px 10px;
+        font-size: 18px;
+    }
+
+    .summary_kontaktinfos_unter_googlemaps {
+        margin: 30px 10px;
+    }
+
+    #summary_email_kita,
+    #summary_adresse_kita,
+    #summary_tel_kita {
+        padding: 10px 0;
+        margin: 10px 45px;
+    }
+
+    #summary_email_kita > i,
+    #summary_adresse_kita > i,
+    #summary_tel_kita > i {
+        font-size: 2rem;
+    }
+
+    /* FELD ANSPRECHPARTNER */
+    .ansprechpartner {
+        background-color: #95ed9579;
+        border: 2px solid green;
+        border-radius: 5px;
+        width: 80%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    #h2_ansprechpartner {
+        font-size: 28px;
+        margin-top: 10px;
+    }
+
+    #kita-leiterin,
+    #stellv_kita_leiterin {
+        font-size: 19px;
+        padding: 10px 0;
+    }
+
+    #kontakt_links_tel {
+        font-size: 19px;
+        padding-top: 15px;
+    }
+
+    #kontakt_links_fax,
+    #kontakt_links_email {
+        font-size: 19px;
+        padding: 15px 0;
+    }
+
+    /* FELD FORMULAR */
+    .formular {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px 0;
+    }
+
+    form {
+        border: 2px ridge green;
+    }
+
+    label {
+        font-size: 18px;
+    }
+
+    .eingabe_name {
+        margin-top: 10px;
+    }
+
+    #fullName,
+    #email,
+    #message {
+        border: 1px solid lightgreen;
+        font-size: 14px;
+        width: 95%;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        padding-left: 5px;
+    }
+
+    #fullName:hover,
+    #email:hover,
+    #message:hover {
+        border-color: green;
+    }
+
+    button {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    button:active {
+        background-color: darkgreen;
+    }
+
+    /* HÄUFIG GESTELLTE FRAGE */
+    #h1_header {
+        font-size: 2.3rem;
+        padding: 10px;
+        margin-top: 1.8rem;
+    }
+
+    #h1_p {
+        font-size: 22px;
+        padding: 12px;
+        margin: 0 10px 20px 10px;
+    }
+
+    .summary_häufig_gestellte_Fragen {
+        color: beige;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    article {
+        font-size: 20px;
+        margin: 12px 20px 12px 20px;
+    }
+
+    /* FELDER MIT LINKS ZU INTERNEN ANDEREN SEITEN  */
+    .h2_header_int_links {
+        font-size: 2.3rem;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: 1.5rem 1rem 0 1rem;
+    }
+
+    #link_unser_konzept,
+    #link_unsere_gruppenr,
+    #unser_team {
+        font-weight: bold;
+        font-size: 1.5rem;
+        padding: 20px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    /* weitere Informationen unter Google-maps...  */
+    .infos_unter_google {
+        background-color: #95ed9579;
+    }
+
+    .text_unter_googlemaps {
+        background-color: green;
+        padding-bottom: 15px;
+    }
+
+    .h2_fragen_anmerkungen_wünsche {
+        font-size: 2.5rem;
+        padding: 10px 10px 5px 10px;
+    }
+
+    .text_fr_an_wünsche {
+        font-size: 23px;
+    }
+
+    .summary_kontaktinfos_unter_googlemaps {
+        display: flex;
+        justify-content: space-around;
+        margin: 20px 10px;
+    }
+
+    #summary_email_kita,
+    #summary_adresse_kita,
+    #summary_tel_kita {
+        box-shadow: 5px 5px 15px 5px #327432;
+        padding: 25px 100px;
+    }
+
+    #summary_email_kita > i,
+    #summary_adresse_kita > i,
+    #summary_tel_kita > i {
+        font-size: 2.5rem;
+    }
+
+    #summary_email_kita:hover,
+    #summary_adresse_kita:hover,
+    #summary_tel_kita:hover {
+        background-color: #2d4d2d93;
+        border: 4px solid green;
+    }
+
+    .kontakt_daten {
+        font-size: 25px;
+    }
+
+    /* FELD ANSPRECHPARTNER */
+    .anp_form_neben {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .ansp_feld {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        padding: 6px 0;
+    }
+
+    .ansprechpartner {
+        box-shadow: 5px 5px 15px 5px #327432;
+        width: 95%;
+    }
+
+    #kontakt_links_tel:hover,
+    #kontakt_links_fax:hover,
+    #kontakt_links_email:hover {
+        font-size: 1.5rem;
+        color: green;
+        padding: 15px 0;
+    }
+
+    /* FELD FORMULAR */
+    .formular {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+    }
+
+    form {
+        box-shadow: 5px 5px 15px 5px #327432;
+        width: 95%;
+    }
+
+    #fullName,
+    #email,
+    #message {
+        border: none;
+        width: 95%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+    }
+
+    #message {
+        resize: none;
+        overflow-y: auto;
+        scrollbar-width: thin;
+    }
+
+    #fullName:hover,
+    #email:hover,
+    #message:hover {
+        border: 3px solid green;
+    }
+
+    #fullName:focus,
+    #email:focus,
+    #message:focus {
+        border: 3px solid #4e4eec;
+    }
+
+    button {
+        color: blue;
+    }
+
+    button:hover {
+        font-size: 1.3rem;
+        background-color: green;
+    }
+
+    button:active {
+        background-color: darkgreen;
+    }
+
+    .fragen_1-8 {
+        display: flex;
+        justify-content: space-around;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .fragen_1-4 {
+        width: 45%;
+    }
+
+    .fragen_5-8 {
+        width: 45%;
+    }
+
+    .summary_häufig_gestellte_Fragen {
+        font-size: 1.3rem;
+        box-shadow: 5px 5px 15px 5px #327432;
+        margin: 15px;
+    }
+
+    .summary_häufig_gestellte_Fragen:hover {
+        background-color: #2d4d2d93;
+        border: 4px solid green;
+    }
+
+    article {
+        margin: 30px;
+    }
+
+    /* FELDER MIT LINKS ZU INTERNEN ANDEREN SEITEN  */
+    .h2_header_int_links {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 7rem;
+        margin-bottom: 3rem;
+    }
+
+    /* .einzel_links_int_seiten {
+    margin-left: 80px;
+    margin-right: 80px;
+} */
+
+    #link_unser_konzept,
+    #link_unsere_gruppenr,
+    #unser_team {
+        box-shadow: 5px 5px 15px 5px #327432;
+        font-size: 1.4rem;
+        padding: 18px 0;
+        margin: 1.8rem 25rem;
+    }
+
+    #link_unser_konzept:hover,
+    #link_unsere_gruppenr:hover,
+    #unser_team:hover {
+        background-color: #2d4d2d93;
+        border: 4px solid green;
+    }
+}

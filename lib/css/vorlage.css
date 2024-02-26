@@ -1,21 +1,12 @@
 body {
     margin: 0;
     padding: 0;
-<<<<<<< HEAD
-    /* background: #FCEDB8;   */
-=======
->>>>>>> dirk
     background: #FFF9D7;
     box-sizing: border-box;
     width: 100vw;
     min-height: 100vh;
-<<<<<<< HEAD
-    display: flex;
-    flex-direction: column;
-=======
   
     
->>>>>>> dirk
 }
 
 /* nav */
@@ -117,14 +108,8 @@ body {
     background-color: #bce362;
 }
 
-<<<<<<< HEAD
-/* -------- */
-/* header childs */
-=======
-
 /* header childs */
 
->>>>>>> dirk
 .childs {
     position: relative;
 
@@ -152,59 +137,21 @@ body {
 }
 
 /* main */
-main {
-    flex: 1;
 
-}
 
-/* wellcome */
-.welcome-h1 {
-    font-size: 1.8rem;
-}
 
-.welcome-h1,
-.interest {
-    text-align: center;
-    color: #EA985C;
-}
 
-.wellcome img {
-    display: block;
-    margin: 0 auto;
-}
 
-.wellcome p {
-    font-size: 1.7rem;
-}
 
-.house {
-    max-width: 80%;
-}
 
-.wellcome a {
-    text-decoration: none;
-}
 
-/* rows */
 
-.row {
-    height: 12rem;
-    width: 12rem;
-    display: block;
-    margin: 1rem auto;
-}
 
-.first-pic p,
-.second-pic p {
-    text-align: center;
-    color: #EA985C;
-    font-size: 1.8rem;
-}
 
-.first-pic a,
-.second-pic a {
-    text-decoration: none;
-}
+
+
+
+
 
 .back {
     position: relative;
@@ -247,10 +194,9 @@ main {
     .envelope,
     .logo-desktop,
     .desktop-nav,
-    .groups,
     .bottom-c,
-    .bottom-r,
-    .second-pic {
+    .bottom-r
+     {
         display: none;
     }
 
@@ -272,54 +218,9 @@ main {
         font-size: 5rem;
     }
 
-    /* groups */
+  
 
-    .groups {
-        width: 100%;
-        height: 14rem;
-        background: rgb(203, 202, 85);
-        background: linear-gradient(180deg, rgba(203, 202, 85, 1) 0%, rgba(160, 191, 85, 1) 25%, rgba(50, 167, 86, 1) 51%, rgba(160, 191, 85, 1) 75%, rgba(203, 202, 85, 1) 100%);
-
-    }
-
-    .groups>h2 {
-        text-align: center;
-        padding-top: 1rem;
-
-    }
-
-    .groups a {
-        color: green;
-        text-decoration: none;
-        font-size: 1.4rem;
-    }
-
-    .groups p {
-        margin: 0;
-    }
-
-    .grouppics {
-        display: flex;
-        justify-content: center;
-        padding-top: rem;
-        gap: 12rem;
-    }
-
-    .grouppics img {
-        border-radius: 50%;
-        height: 6.2rem;
-        width: auto;
-
-    }
-
-    /* rows */
-
-    .first-pic,
-    .second-pic {
-        display: flex;
-        justify-content: space-evenly;
-
-    }
+   
 
 
 
@@ -382,7 +283,6 @@ main {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-
     }
 
     .desktop-nav button {
@@ -404,18 +304,14 @@ main {
     }
 
 
-    .house {
-        max-width: 50%;
-        height: auto;
-    }
+
 }
+
+
+
 
 @media screen and (min-width: 1600px) {
     .desktop-nav {
         margin: 1rem 12rem;
-<<<<<<< HEAD
-    }
-=======
     }
 }
->>>>>>> dirk
