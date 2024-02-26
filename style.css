@@ -1,6 +1,3 @@
-/* Feld Ansprechpartner auseinander ziehen */
-/* hover Sachen anschauen */
-
 * {
     margin: 0;
     padding: 0;
@@ -34,13 +31,13 @@ iframe {
 }
 
 .h2_fragen_anmerkungen_wünsche {
-    /* background-color: red; */
+    color: white;
     font-size: 2rem;
     padding: 10px 10px 5px 10px;
 }
 
 .text_fr_an_wünsche {
-    /* background-color: blue; */
+    color: white;
     font-size: 20px;
     padding: 10px 10px 10px 10px;
 }
@@ -58,6 +55,12 @@ iframe {
     margin: 5px 5px;
 }
 
+#summary_email_kita > i,
+#summary_adresse_kita > i,
+#summary_tel_kita > i {
+    color: wheat;
+}
+
 i {
     padding: 5px 0;
 }
@@ -65,25 +68,6 @@ i {
 .kontakt_daten {
     font-size: 20px;
 }
-
-/* .kontaktinfos_unter_googlemaps {
-    background-color: aquamarine;
-}
-
-#name_kita {
-    background-color: beige;
-    font-size: 18px;
-    padding-top: px;
-}
-
-#str_kita {
-    background-color: blueviolet;
-    font-size: 18px;
-    padding: 5px 10px;
-}
-#plz_kita {
-    background-color: blue;
-} */
 
 /* FELD ANSPRECHPARTNER */
 .ansp_feld {
@@ -595,6 +579,7 @@ article {
     #link_unser_konzept,
     #link_unsere_gruppenr,
     #unser_team {
+        color: beige;
         box-shadow: 5px 5px 15px 5px #327432;
         font-size: 1.4rem;
         padding: 18px 0;
