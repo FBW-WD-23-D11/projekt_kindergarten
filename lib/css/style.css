@@ -167,11 +167,11 @@ main {
 }
 
 /* wellcome */
-.welcome-h1 {
+.welcome-h2 {
     font-size: 2.5rem;
 }
 
-.welcome-h1,
+.welcome-h2,
 .interest {
     text-align: center;
     color: #EA985C;
