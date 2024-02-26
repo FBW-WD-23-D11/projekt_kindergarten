@@ -21,11 +21,9 @@ body {
     flex-direction: column;
 }
 
-
-/* nav */
-.nav,
-.desktop-nav {
+.nav {
     color: #FEEEBB;
+
 }
 
 .mobil-nav {
@@ -51,6 +49,11 @@ body {
     height: 7rem;
     width: auto;
     margin-left: .2rem;
+}
+
+.bars {
+    height: 25px;
+    width: auto;
 }
 
 .phone,
