@@ -1,9 +1,11 @@
 @font-face {
     font-family: "Allura";
-    src: url("../fonts/Allura-Regular.ttf") format("truetype");
+    src: url('../fonts/Allura/Allura-Regular.ttf') format("truetype");
+}
 
-    font-family: "roboto";
-    src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
 }
 
 
@@ -11,19 +13,20 @@
 body {
     margin: 0;
     padding: 0;
-    /* background: #FCEDB8;   */
     background: #FFF9D7;
     box-sizing: border-box;
     width: 100vw;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    font-family: roboto, "Roboto-Regular", sans-serif;
+    letter-spacing: 1px;
+
+
 }
 
 /* nav */
-.nav,
-.desktop-nav {
+.nav {
     color: #FEEEBB;
+
 }
 
 .mobil-nav {
@@ -51,12 +54,22 @@ body {
     margin-left: .2rem;
 }
 
+.bars {
+    height: 25px;
+    width: auto;
+}
+
 .phone,
 .envelope,
 .time {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+.envelope a {
+    text-decoration: none;
+    color: #FEEEBB;
 }
 
 .time-phone {
@@ -81,7 +94,7 @@ body {
 .dropbtn {
     /* background-color: #9fbf55f7; */
     color: #fff;
-    padding: 17px;
+    padding: 32px;
     border: none;
     cursor: pointer;
 }
@@ -119,8 +132,8 @@ body {
     background-color: #bce362;
 }
 
-/* -------- */
 /* header childs */
+
 .childs {
     position: relative;
 
@@ -136,9 +149,9 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -100%);
+    transform: translate(-50%, -65%);
     color: #1bdd3b;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-family: "Allura", cursive;
     font-weight: 400;
     font-style: normal;
@@ -155,7 +168,7 @@ main {
 
 /* wellcome */
 .welcome-h1 {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
 }
 
 .welcome-h1,
@@ -170,7 +183,7 @@ main {
 }
 
 .wellcome p {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
 }
 
 .house {
@@ -179,6 +192,11 @@ main {
 
 .wellcome a {
     text-decoration: none;
+    color: #EA985C;
+}
+
+.wellcome a:hover {
+    color: #f06706;
 }
 
 /* rows */
@@ -195,6 +213,11 @@ main {
     text-align: center;
     color: #EA985C;
     font-size: 1.8rem;
+}
+
+.first-pic p:hover,
+.second-pic p:hover {
+    color: #f06706;
 }
 
 .first-pic a,
@@ -264,7 +287,7 @@ main {
     }
 
     /* header */
-    .childs .text-overlay {
+    .childs .text-overlay h1 {
         font-size: 5rem;
     }
 
@@ -274,30 +297,33 @@ main {
         width: 100%;
         height: 14rem;
         background: rgb(203, 202, 85);
-        background: linear-gradient(180deg, rgba(203, 202, 85, 1) 0%, rgba(160, 191, 85, 1) 25%, rgba(50, 167, 86, 1) 51%, rgba(160, 191, 85, 1) 75%, rgba(203, 202, 85, 1) 100%);
+        background: linear-gradient(180deg, rgba(203, 202, 85, 1) 0%, rgba(160, 191, 85, 1) 25%, rgba(50, 167, 86, 1) 51%, #a0bf55 75%, rgba(203, 202, 85, 1) 100%);
 
     }
 
-    .groups h2 {
+    .groups>h2 {
         text-align: center;
         padding-top: 1rem;
-
+        font-size: 1, 8rem;
     }
 
     .groups a {
         color: green;
         text-decoration: none;
-        font-size: 1.4rem;
+        font-size: 1.5rem;
+    }
+
+    .groups a:hover {
+        color: #abf304;
     }
 
     .groups p {
-        margin: 0;
+        margin-top: 1rem;
     }
 
     .grouppics {
         display: flex;
         justify-content: center;
-        padding-top: rem;
         gap: 12rem;
     }
 
@@ -350,7 +376,6 @@ main {
         display: none;
     }
 
-
 }
 
 /* pc */
@@ -385,14 +410,77 @@ main {
     .desktop-nav button {
         height: 2.9rem;
         width: 8rem;
-        border-radius: 15px;
-        background: #EA985C;
+        border-radius: 30px;
+        border: none;
+        background: rgb(50, 167, 86);
+        background: linear-gradient(180deg, rgba(50, 167, 86, 1) 0%, #a0bf55 42%, rgba(203, 202, 85, 1) 100%);
+        transition: background 0.9s ease;
+        box-shadow: 12px -5px 10px #0fa93d;
     }
 
-    .desktop-nav button a {
+    .desktop-nav button:hover {
+        background: #32a756;
+        transition: background 0.9s ease;
+    }
+
+    .desktop-nav button a,
+    .mein-dropbtn {
         color: #ffffff;
         font-size: 1.3rem;
         text-decoration: none;
+        font-weight: 900;
+    }
+
+    /* dorpdown - desktop-nav */
+
+    .mein-dropdown {
+        position: relative;
+        display: inline-block;
+        z-index: 2;
+    }
+
+    .mein-dropbtn {
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mein-dropdown-content {
+        display: none;
+        position: absolute;
+        width: 120px;
+        background: #32a756;
+        text-align: center;
+        border-radius: 10px 10px 10px 10px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+
+    }
+
+    .mein-dropdown-content a {
+        color: #ffffff;
+        text-decoration: none;
+        display: block;
+    }
+
+    .mein-dropdown-content a:hover {
+        background-color: #a0bf55;
+
+    }
+
+    .aktiver-dropdown:hover .mein-dropdown-content {
+        display: block;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+
+    .fa p:after {
+        font-family: "Font Awesome 5 Free";
+        content: "\f0d7";
+        display: inline-block;
+        padding-left: 5px;
+        vertical-align: middle;
+        font-weight: 900;
     }
 
     /* header */
@@ -410,6 +498,5 @@ main {
 @media screen and (min-width: 1600px) {
     .desktop-nav {
         margin: 1rem 12rem;
-
     }
 }

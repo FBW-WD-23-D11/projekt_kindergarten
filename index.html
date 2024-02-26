@@ -13,7 +13,8 @@
     <title>Kita St. Martin</title>
     <link rel="icon" href="./lib/icons/kindergarten_logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./lib/css/style.css">
-
+    <link rel="stylesheet" href="./lib/css/allura.css">
+    <link rel="stylesheet" type="text/css" href="//use.fontawesome.com/releases/v5.7.2/css/all.css">
 </head>
 
 <body>
@@ -23,7 +24,7 @@
 
             <!-- mobil-nav -->
 
-            <div class="mobil-nav" id="top">
+            <div class="mobil-nav">
 
                 <div class="logo"><img src="./lib/icons/kindergarten_logo.png" alt="logo">
                 </div>
@@ -34,7 +35,8 @@
                     </div>
 
                     <div class="envelope"><img src="./lib/icons/envelope-regular.svg" alt="umschlag">
-                        <p>postkasten@kindergarten-st-martin.de</p>
+                        <p><a href="mailto:postkasten@kindergarten-st-martin.de"
+                                title="Mail">postkasten@kindergarten-st-martin.de</a></p>
                     </div>
 
                     <div class="time"><img src="./lib/icons/clock-regular.svg" alt="clock">
@@ -44,14 +46,17 @@
                 </div>
 
                 <div class="dropdown">
-                    <div class="dropbtn"><img src="lib/icons/bars-solid.svg" height="25px" width="25px"
+                    <div class="dropbtn"><img class="bars" src="lib/icons/bars-solid.svg" 
                             alt="menu-button"></div>
                     <div class="dropdown-content">
-                        <a href="#">Unser Haus</a>
-                        <a href="#">Elternbeirat</a>
-                        <a href="#">Träger</a>
-                        <a href="#">Förderverein</a>
-                        <a href="#">test</a>
+                        <a href="index.html">Startseite</a>
+                        <a href="haus.html">Unser Haus</a>
+                        <a href="neues.html">Neues</a>
+                        <a href="aktiv.html">Aktivitäten</a>
+                        <a href="contact.html">Kontakt</a>
+                        <a href="eltern.html">Elternbeirat</a>
+                        <a href="traeger.html">Träger</a>
+                        <a href="foerder.html">Förderverein</a>
                     </div>
                 </div>
 
@@ -61,28 +66,54 @@
             <!-- desktop-nav -->
 
             <div class="desktop-nav">
-
-                <button><a href="#">
-                        <p>Das Haus</p>
-                    </a></button>
-                <button><a href="#">
-                        <p>Neues</p>
-                    </a></button>
-
-                <div class="logo-desktop"><img src="./lib/icons/kindergarten_logo.png" alt="logo"></div>
-
-                <button><a href="#">
-                        <p>Kontakt</p>
-                    </a></button>
-                <button><a href="#">
-                        <p>Team</p>
-                    </a></button>
-            </div>
+                <div class="logo-desktop"><img src="./lib/icons/kindergarten_logo.png" alt="Logo"></div>
+                
+                <div class="mein-dropdown">
+                  <button class="mein-dropbtn"><a href="index.html">Startseite</a></button>
+                  <div class="mein-dropdown-content">
+                    <!-- Dropdown-Optionen hier -->
+                  </div>
+                </div>
+              
+                <div class="mein-dropdown aktiver-dropdown">
+                  <button class="mein-dropbtn fa"><p>Das Haus</p></button>
+                  <div class="mein-dropdown-content">
+                    <a href="haus.html"> Das Haus</a>
+                    <a href="team.html">UnserTeam</a>
+                    <a href="aktiv.html">Aktivitäten</a>
+                    <a href="#".html>Konzept</a>
+                    <a href="neues.html">Neuigkeiten</a>
+                  </div>
+                </div>
+              
+                <div class="mein-dropdown">
+                  <button class="mein-dropbtn"><a href="neues.html"><p>Neues</p></a></button>
+                  <div class="mein-dropdown-content">
+                    <!-- Dropdown-Optionen hier -->
+                  </div>
+                </div>
+              
+                <div class="mein-dropdown">
+                  <button class="mein-dropbtn"><a href="kontakt.html"><p>Kontakt</p></a></button>
+                  <div class="mein-dropdown-content">
+                    <!-- Dropdown-Optionen hier -->
+                  </div>
+                </div>
+              
+                <div class="mein-dropdown aktiver-dropdown">
+                  <button class="mein-dropbtn fa"><p>Info's</p></button>
+                  <div class="mein-dropdown-content">
+                    <a href="#".html>Förderverein</a>
+                    <a href="#".html>Elternbeirat</a>
+                    <a href="#".html>Träger</a>
+                    <a href="vorlage.html">vorlage</a>
+      
+                  </div>
+                </div>
+              </div>
         </nav>
         <div class="childs"><img src="./lib/img/childs.png" alt="childs">
-            <div class="text-overlay">
-                <h1>Kindergarten St. Martin</h1>
-            </div>
+            <div class="text-overlay"><h1>Kindergarten St. Martin</h1></div>
 
         </div>
     </header>
@@ -94,15 +125,15 @@
             <div class="groups">
                 <h2>Unsere Gruppen</h2>
                 <ul class="grouppics">
-                    <li><a href="#"><img src="./lib/icons/maus-skating.jpg" alt="maus">
+                    <li><a href="haus.html#mouse"><img src="./lib/icons/maus-skating.jpg" alt="maus">
                             <p>Die Mäuse</p>
                         </a>
                     </li>
-                    <li><a href="#"><img src="./lib/icons/rabit-skating.jpg" alt="hase">
+                    <li><a href="haus.html#rabit"><img src="./lib/icons/rabit-skating.jpg" alt="hase">
                             <p>Die Hasen</p>
                         </a>
                     </li>
-                    <li><a href="#"><img src="./lib/icons/dolphin-skating.jpg" alt="delfin">
+                    <li><a href="haus.html#dolphin"><img src="./lib/icons/dolphin-skating.jpg" alt="delfin">
                             <p>Die Delfine</p>
                         </a>
                     </li>
@@ -115,7 +146,7 @@
                 <h1 class="welcome-h1">Willkommmen in unserem Haus</h1>
                 <img class="house" src="lib/img/Haus-small.jpg" alt="house-bild">
                 <p class="interest">Interressiert ? <span><strong>
-                            <a href="#">Hier</a></strong></span> erfahren Sie mehr.</p>
+                            <a href="haus.html">Hier</a></strong></span> erfahren Sie mehr.</p>
                 </p>
             </div>
 
@@ -124,10 +155,10 @@
             <!-- rows -->
 
             <div class="first-pic">
-                <a href="#"> <img class="row" src="./lib/img/Team.webp" alt="team" title="Team">
+                <a href="team.html"> <img class="row" src="./lib/img/Team.webp" alt="team" title="Team">
                     <p>Unser Team</p>
                 </a>
-                <a href="#"><img class="row" src="./lib/img/tischfarben.webp" alt="wasserfarben" title="Aktivitäten">
+                <a href="aktiv.html"><img class="row" src="./lib/img/tischfarben.webp" alt="wasserfarben" title="Aktivitäten">
                     <p>Aktivitäten</p>
                 </a>
                 <a href="#"> <img class="row" src="./lib/img/wald.webp" alt="waldspaziergang" title="Konzept">
@@ -147,8 +178,7 @@
                 </a>
             </div>
 
-            <div class="back"><a href="#" class="top"> top </a><img src="./lib/icons/arrow.png" alt="arrow"></a>
-            </div>
+            <div class="back"><a href="#"><img src="./lib/icons/arrow.png" alt="arrow"></a></div>
         </section>
     </main>
 
@@ -181,7 +211,7 @@
                     <li><a class="download" href="#">
                             <p>Download</p>
                         </a></li>
-                    <li><a class="data protection" href="#">
+                    <li><a class="data protection" href="datenschutz.html">
                             <p>Datenschutz</p>
                         </a></li>
                 </ul>

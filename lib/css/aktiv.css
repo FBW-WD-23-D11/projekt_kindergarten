@@ -4,9 +4,10 @@
 }
 
 @font-face {
-    font-family: "roboto";
-    src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
 }
+
 
 body {
     margin: 0;
@@ -15,7 +16,8 @@ body {
     box-sizing: border-box;
     width: 100vw;
     min-height: 100vh;
-    font-family: "arial";
+    font-family: roboto, "Roboto-Regular", sans-serif;
+    letter-spacing: 1px;
 
 
 }
@@ -86,7 +88,7 @@ body {
 .dropbtn {
     /* background-color: #9fbf55f7; */
     color: #fff;
-    padding: 17px;
+    padding: 32px;
     border: none;
     cursor: pointer;
 }
@@ -137,13 +139,13 @@ body {
     margin-top: 1rem;
 }
 
-.childs .text-overlay {
+.childs .text-overlay h1 {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -65%);
     color: #1bdd3b;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-family: "Allura", cursive;
     font-weight: 400;
     font-style: normal;
@@ -152,25 +154,32 @@ body {
     text-align: center;
 }
 
+
+
+
+
+
 /* main */
+
+
 
 .aktion {
     margin: 0 1rem;
 }
 
-h1 {
+.aktion h2 { 
     text-align: center;
     font-size: 2.5rem;
 }
 
-h2 {
+.aktion h3 {
     text-align: center;
     font-size: 1.8rem;
     margin-bottom: 1rem;
 }
 
-h1,
-h2
+.aktion h2,
+.aktion h3
  {
     color: #EA985C;
 }
@@ -282,7 +291,7 @@ h2
     }
 
     /* header */
-    .childs .text-overlay {
+    .childs .text-overlay h1{
         font-size: 5rem;
     }
 
@@ -372,13 +381,64 @@ h2
         transition: background 0.9s ease;
     }
 
-    .desktop-nav button a {
+    .desktop-nav button a ,
+    .mein-dropbtn
+     {
         color: #ffffff;
         font-size: 1.3rem;
         text-decoration: none;
+        font-weight: 900;
+    }
+/* dorpdown - desktop-nav */
+
+    .mein-dropdown {
+        position: relative;
+        display: inline-block;
+        z-index: 2;
+    }
+
+    .mein-dropbtn {
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .mein-dropdown-content {
+        display: none;
+        position: absolute;
+        width: 120px;
+        background: #32a756;
+        text-align: center;
+        border-radius: 10px 10px 10px 10px
+         ;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 
     }
 
+    .mein-dropdown-content a {
+        color: #ffffff;
+        text-decoration: none;
+        display: block;
+    }
+
+    .mein-dropdown-content a:hover {
+        background-color: #a0bf55;
+
+    }
+    .aktiver-dropdown:hover .mein-dropdown-content {
+        display: block;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+    .fa p:after {
+        font-family: "Font Awesome 5 Free";
+        content: "\f0d7";
+        display: inline-block;
+        padding-left: 5px;
+        vertical-align: middle;
+        font-weight: 900;
+    }
 
 
     /* header */

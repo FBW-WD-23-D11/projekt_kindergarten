@@ -1,11 +1,11 @@
 @font-face {
     font-family: "Allura";
-    src: url("../fonts/Allura-Regular.ttf") format("truetype");
+    src: url('../fonts/Allura/Allura-Regular.ttf') format("truetype");
 }
 
 @font-face {
     font-family: "roboto";
-    src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+    src: url('../fonts/Roboto/Roboto-Regular.ttf') format("truetype");
 }
 
 body {
@@ -15,14 +15,16 @@ body {
     box-sizing: border-box;
     width: 100vw;
     min-height: 100vh;
+    font-family: roboto, "Roboto-Regular", sans-serif;
+    letter-spacing: 1px;
 
 
 }
 
 /* nav */
-.nav,
-.desktop-nav {
+.nav {
     color: #FEEEBB;
+
 }
 
 .mobil-nav {
@@ -58,6 +60,11 @@ body {
     gap: 10px;
 }
 
+.envelope a {
+    text-decoration: none;
+    color: #FEEEBB;
+}
+
 .time-phone {
     display: flex;
     flex-direction: column;
@@ -80,7 +87,7 @@ body {
 .dropbtn {
     /* background-color: #9fbf55f7; */
     color: #fff;
-    padding: 17px;
+    padding: 32px;
     border: none;
     cursor: pointer;
 }
@@ -131,13 +138,13 @@ body {
     margin-top: 1rem;
 }
 
-.childs .text-overlay {
+.childs .text-overlay h1 {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -65%);
     color: #1bdd3b;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-family: "Allura", cursive;
     font-weight: 400;
     font-style: normal;
@@ -152,35 +159,32 @@ body {
 
 
 
-h1,
+
 h2,
 h3,
 h4,
 .house .housetext,
 .group .grouptext,
 .rooms .grouptext {
-    font-family: roboto, "Roboto-Regular", sans-serif;
     text-align: center;
     margin: 2rem 10%;
     color: #EA985C;
 }
 
-h1 {
-    font-size: 2.5rem;
-}
+
 
 h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
-
+h3 {font-size: 2rem;}
 .house .housetext,
 .house .housetext,
 .group .grouptext,
-.rooms .grouptext,
-h3 {
-    font-size: 1.5rem;
-
+.rooms .grouptext {
+    font-size: 1.3rem;
 }
+.group h4{font-size: 1.4rem;}
+
 
 .house img {
     max-width: 80%;
@@ -282,7 +286,7 @@ h3 {
     }
 
     /* header */
-    .childs .text-overlay {
+    .childs .text-overlay h1 {
         font-size: 5rem;
     }
 
@@ -358,14 +362,76 @@ h3 {
     .desktop-nav button {
         height: 2.9rem;
         width: 8rem;
-        border-radius: 15px;
-        background: #EA985C;
+        border-radius: 30px;
+        border: none;
+        background: rgb(50, 167, 86);
+        background: linear-gradient(180deg, rgba(50, 167, 86, 1) 0%, #a0bf55 42%, rgba(203, 202, 85, 1) 100%);
+        transition: background 0.9s ease;
+        box-shadow: 12px -5px 10px #0fa93d;
     }
 
-    .desktop-nav button a {
+    .desktop-nav button:hover {
+        background: #32a756;
+        transition: background 0.9s ease;
+    }
+
+    .desktop-nav button a ,
+    .mein-dropbtn
+     {
         color: #ffffff;
         font-size: 1.3rem;
         text-decoration: none;
+        font-weight: 900;
+    }
+/* dorpdown - desktop-nav */
+
+    .mein-dropdown {
+        position: relative;
+        display: inline-block;
+        z-index: 2;
+    }
+
+    .mein-dropbtn {
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .mein-dropdown-content {
+        display: none;
+        position: absolute;
+        width: 120px;
+        background: #32a756;
+        text-align: center;
+        border-radius: 10px 10px 10px 10px
+         ;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+
+    }
+
+    .mein-dropdown-content a {
+        color: #ffffff;
+        text-decoration: none;
+        display: block;
+    }
+
+    .mein-dropdown-content a:hover {
+        background-color: #a0bf55;
+
+    }
+    .aktiver-dropdown:hover .mein-dropdown-content {
+        display: block;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+    .fa p:after {
+        font-family: "Font Awesome 5 Free";
+        content: "\f0d7";
+        display: inline-block;
+        padding-left: 5px;
+        vertical-align: middle;
+        font-weight: 900;
     }
 
     /* header */

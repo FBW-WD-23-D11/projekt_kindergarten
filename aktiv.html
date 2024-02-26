@@ -13,7 +13,7 @@
     <title>Kita St. Martin</title>
     <link rel="icon" href="./lib/icons/kindergarten_logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./lib/css/aktiv.css">
-
+    <link rel="stylesheet" type="text/css" href="//use.fontawesome.com/releases/v5.7.2/css/all.css">
 </head>
 
 <body>
@@ -23,7 +23,7 @@
 
             <!-- mobil-nav -->
 
-            <div class="mobil-nav" id="top">
+            <div class="mobil-nav">
 
                 <div class="logo"><img src="./lib/icons/kindergarten_logo.png" alt="logo">
                 </div>
@@ -66,34 +66,60 @@
             <!-- desktop-nav -->
 
             <div class="desktop-nav">
-                <div class="logo-desktop"><img src="./lib/icons/kindergarten_logo.png" alt="logo"></div>
-
-                <button><a href="index.html">
-                        <p>Startseite</p>
-                    </a></button>
-                <button><a href="haus.html">
-                        <p>Das Haus</p>
-                    </a></button>
-                <button><a href="neues.html">
-                        <p>Neues</p>
-                    </a></button>
-                <button><a href="contakt.html">
-                        <p>Kontakt</p>
-                    </a></button>
-                <button><a href="team.html">
-                        <p>Team</p>
-                    </a></button>
-            </div>
+                <div class="logo-desktop"><img src="./lib/icons/kindergarten_logo.png" alt="Logo"></div>
+                
+                <div class="mein-dropdown">
+                  <button class="mein-dropbtn"><a href="index.html"><p>Startseite</p></a></button>
+                  <div class="mein-dropdown-content">
+                    <!-- Dropdown-Optionen hier -->
+                  </div>
+                </div>
+              
+                <div class="mein-dropdown aktiver-dropdown">
+                  <button class="mein-dropbtn fa"><p>Das Haus</p></button>
+                  <div class="mein-dropdown-content">
+                    <a href="haus.html"> Das Haus</a>
+                    <a href="team.html">UnserTeam</a>
+                    <a href="aktiv.html">Aktivitäten</a>
+                    <a href="#".html>Konzept</a>
+                    <a href="neues.html">Neuigkeiten</a>
+                  </div>
+                </div>
+              
+                <div class="mein-dropdown">
+                  <button class="mein-dropbtn"><a href="neues.html"><p>Neues</p></a></button>
+                  <div class="mein-dropdown-content">
+                    <!-- Dropdown-Optionen hier -->
+                  </div>
+                </div>
+              
+                <div class="mein-dropdown">
+                  <button class="mein-dropbtn"><a href="kontakt.html"><p>Kontakt</p></a></button>
+                  <div class="mein-dropdown-content">
+                    <!-- Dropdown-Optionen hier -->
+                  </div>
+                </div>
+              
+                <div class="mein-dropdown aktiver-dropdown">
+                  <button class="mein-dropbtn fa"><p>Info's</p></button>
+                  <div class="mein-dropdown-content">
+                    <a href="#".html>Förderverein</a>
+                    <a href="#".html>Elternbeirat</a>
+                    <a href="#".html>Träger</a>
+      
+                  </div>
+                </div>
+              </div>
         </nav>
         <div class="childs"><img src="./lib/img/childs.png" alt="childs">
-            <div class="text-overlay">Kindergarten St. Martin</div>
+            <div class="text-overlay"><h1>Kindergarten St. Martin</h1></div>
 
         </div>
     </header>
     <main>
         <section class="aktion">
-            <h1>Unsere Aktionen</h1>
-            <h2>Schwimmkurs für die Vorschüler</h2>
+            <h2>Unsere Aktivitäten</h2>
+            <h3>Schwimmkurs für die Vorschüler</h3>
             <article>
              
                 <img id="schwimmen-1" src="lib/img/aktiv/schwimm2.jpg" alt="schwimmende kinder">
@@ -182,7 +208,7 @@
 
 
 
-        <div class="back"><a href="#top"><img src="./lib/icons/arrow.png" alt="arrow"></a></div>
+        <div class="back"><a href="#"><img src="./lib/icons/arrow.png" alt="arrow"></a></div>
         </section>
     </main>
 

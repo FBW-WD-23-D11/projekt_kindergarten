@@ -13,8 +13,8 @@
     <title>Kita St. Martin</title>
     <link rel="icon" href="./lib/icons/kindergarten_logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./lib/css/haus.css">
-    <link rel="stylesheet" href="./lib/css/style.css">
-
+    <link rel="stylesheet" href="./lib/css/allura.css">
+    <link rel="stylesheet" type="text/css" href="//use.fontawesome.com/releases/v5.7.2/css/all.css">
 </head>
 
 <body>
@@ -24,7 +24,7 @@
 
             <!-- mobil-nav -->
 
-            <div class="mobil-nav" id="top">
+            <div class="mobil-nav">
 
                 <div class="logo"><img src="./lib/icons/kindergarten_logo.png" alt="logo">
                 </div>
@@ -35,7 +35,8 @@
                     </div>
 
                     <div class="envelope"><img src="./lib/icons/envelope-regular.svg" alt="umschlag">
-                        <p>postkasten@kindergarten-st-martin.de</p>
+                        <p><a href="mailto:postkasten@kindergarten-st-martin.de"
+                                title="Mail">postkasten@kindergarten-st-martin.de</a></p>
                     </div>
 
                     <div class="time"><img src="./lib/icons/clock-regular.svg" alt="clock">
@@ -65,27 +66,53 @@
             <!-- desktop-nav -->
 
             <div class="desktop-nav">
-                <div class="logo-desktop"><img src="./lib/icons/kindergarten_logo.png" alt="logo"></div>
-
-                <button><a href="index.html">
-                        <p>Startseite</p>
-                    </a></button>
-                <button><a href="haus.html">
-                        <p>Das Haus</p>
-                    </a></button>
-                <button><a href="neues.html">
-                        <p>Neues</p>
-                    </a></button>
-                <button><a href="contakt.html">
-                        <p>Kontakt</p>
-                    </a></button>
-                <button><a href="team.html">
-                        <p>Team</p>
-                    </a></button>
-            </div>
+                <div class="logo-desktop"><img src="./lib/icons/kindergarten_logo.png" alt="Logo"></div>
+                
+                <div class="mein-dropdown">
+                  <button class="mein-dropbtn"><a href="index.html"><p>Startseite</p></a></button>
+                  <div class="mein-dropdown-content">
+                    <!-- Dropdown-Optionen hier -->
+                  </div>
+                </div>
+              
+                <div class="mein-dropdown aktiver-dropdown">
+                  <button class="mein-dropbtn fa"><p>Das Haus</p></button>
+                  <div class="mein-dropdown-content">
+                    <a href="haus.html"> Das Haus</a>
+                    <a href="team.html">UnserTeam</a>
+                    <a href="aktiv.html">Aktivitäten</a>
+                    <a href="#".html>Konzept</a>
+                    <a href="neues.html">Neuigkeiten</a>
+                  </div>
+                </div>
+              
+                <div class="mein-dropdown">
+                  <button class="mein-dropbtn"><a href="neues.html"><p>Neues</p></a></button>
+                  <div class="mein-dropdown-content">
+                    <!-- Dropdown-Optionen hier -->
+                  </div>
+                </div>
+              
+                <div class="mein-dropdown">
+                  <button class="mein-dropbtn"><a href="kontakt.html"><p>Kontakt</p></a></button>
+                  <div class="mein-dropdown-content">
+                    <!-- Dropdown-Optionen hier -->
+                  </div>
+                </div>
+              
+                <div class="mein-dropdown aktiver-dropdown">
+                  <button class="mein-dropbtn fa"><p>Info's</p></button>
+                  <div class="mein-dropdown-content">
+                    <a href="#".html>Förderverein</a>
+                    <a href="#".html>Elternbeirat</a>
+                    <a href="#".html>Träger</a>
+      
+                  </div>
+                </div>
+              </div>
         </nav>
         <div class="childs"><img src="./lib/img/childs.png" alt="childs">
-            <div class="text-overlay">Kindergarten St. Martin</div>
+            <div class="text-overlay"><h1>Kindergarten St. Martin</h1></div>
         </div>
     </header>
 
@@ -98,7 +125,7 @@
             <!--  house -->
 
             <div class="house">
-                <h1>Unser schönes Haus</h1>
+                <h2>Unser schönes Haus</h2>
                 <img class="house-pic" src="lib/img/Haus-small.jpg" alt="house-bild">
 
                 <p class="housetext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quod, esse reiciendis
@@ -122,10 +149,10 @@
             <!--  groups -->
 
             <div class="groups">
-                <h2>Unsere Gruppenräume</h2>
+                <h3>Unsere Gruppenräume</h3>
                 <div class="group">
                     <img id="mouse" src="./lib/icons/maus-skating.jpg" alt="maus-skating">
-                    <h3>Die Mäuse von 2-3 Jahre</h3>
+                    <h4>Die Mäuse von 2-3 Jahre</h4>
 
                     <div class="grouppics">
                         <div class="grouppictures">
@@ -133,15 +160,14 @@
                             <img src="./lib/img/pic small/kind-2.jpg" alt="kinder">
                             <img src="./lib/img/pic small/kind-3.jpg" alt="kinder">
                         </div>
-                        <p class="grouptext">Lorem ipsum dolor sit amet ckinderonsectetur adipisicing elit. Fugiat,
-                            facere.
+                        <p class="grouptext">Lorem ipsum dolor sit amet ckinderonsectetur adipisicing elit. Fugiat, facere.
                         </p>
                     </div>
                 </div>
 
                 <div class="group">
                     <img id="rabit" src="./lib/icons/rabit-skating.jpg" alt="rabit-skating">
-                    <h3>Die Hasen von 4-5 Jahre</h3>
+                    <h4>Die Hasen von 4-5 Jahre</h4>
 
                     <div class="grouppics">
                         <div class="grouppictures">
@@ -156,7 +182,7 @@
 
                 <div class="group">
                     <img id="dolphin" src="./lib/icons/dolphin-skating.jpg" alt="dolphin-skating">
-                    <h3>Die Delphine von 5-7 Jahre</h3>
+                    <h4>Die Delphine von 5-7 Jahre</h4>
 
                     <div class="grouppics">
                         <div class="grouppictures">
@@ -174,51 +200,49 @@
             <!--  rooms -->
             <div class="rooms">
 
-                <h2>Kreativwerkstatt</h2>
-                <img class="row" src="./lib/img/pic small/Sandkasten.jpg" alt="Kreativwerkstatt"
-                    title="Kreativwerkstatt">
+                <h3>Kreativwerkstatt</h3>
+                <img class="row" src="./lib/img/pic small/Sandkasten.jpg" alt="Kreativwerkstatt" title="Kreativwerkstatt">
                 <p class="grouptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius aperiam tenetur
                     laboriosam! Esse, eveniet distinctio veritatis molestias rem aspernatur praesentium.</p>
 
-                <h2>Unser Restaurant</h2>
-                <img class="row" src="./lib/img/pic small/Spielplatz.jpg" alt="Unser Restaurant"
-                    title="Unser Restaurant">
+                <h3>Unser Restaurant</h3>
+                <img class="row" src="./lib/img/pic small/Spielplatz.jpg" alt="Unser Restaurant" title="Unser Restaurant">
                 <p class="grouptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius aperiam tenetur
                     laboriosam! Esse, eveniet distinctio veritatis molestias rem aspernatur praesentium.</p>
 
-                <h2>Sonnenraum</h2>
+                <h3>Sonnenraum</h3>
                 <img class="row" src="./lib/img/pic small/balkenschaukel.jpg" alt="Sonnenraum" title="Sonnenraum">
                 <p class="grouptext">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis vitae at
                     exercitationem doloribus labore assumenda ut enim recusandae id facilis!</p>
 
 
-                <h2>Bauwerkstatt</h2>
+                <h3>Bauwerkstatt</h3>
                 <img class="row" src="./lib/img/pic small/Sandkasten.jpg" alt="Bauwerkstatt" title="Bauwerkstatt">
                 <p class="grouptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius aperiam tenetur
                     laboriosam! Esse, eveniet distinctio veritatis molestias rem aspernatur praesentium.</p>
 
-                <h2>Wasserwerkstatt</h2>
+                <h3>Wasserwerkstatt</h3>
                 <img class="row" src="./lib/img/pic small/CIMG4511HP.jpg" alt="Wasserwerkstatt" title="Wasserwerkstatt">
                 <p class="grouptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius aperiam tenetur
                     laboriosam! Esse, eveniet distinctio veritatis molestias rem aspernatur praesentium.</p>
 
-                <h2>Puppenstube</h2>
+                <h3>Puppenstube</h3>
                 <img class="row" src="./lib/img/pic small/balkenschaukel.jpg" alt="Puppenstube" title="Puppenstube">
                 <p class="grouptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius aperiam tenetur
                     laboriosam! Esse, eveniet distinctio veritatis molestias rem aspernatur praesentium.</p>
 
 
-                <h2>Spieleraum</h2>
+                <h3>Spieleraum</h3>
                 <img class="row" src="./lib/img/pic small/Eisenbahn.jpg" alt="Spieleraum" title="Spieleraum">
                 <p class="grouptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius aperiam tenetur
                     laboriosam! Esse, eveniet distinctio veritatis molestias rem aspernatur praesentium.</p>
 
-                <h2>Bibliothek</h2>
+                <h3>Bibliothek</h3>
                 <img class="row" src="./lib/img/pic small/Spielplatz.jpg" alt="Bibliothek" title="Bibliothek">
                 <p class="grouptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius aperiam tenetur
                     laboriosam! Esse, eveniet distinctio veritatis molestias rem aspernatur praesentium.</p>
 
-                <h2>Freigelände</h2>
+                <h3>Freigelände</h3>
                 <img class="row" src="./lib/img/pic small/Essecke.jpg" alt="Freigelände" title="Freigelände">
                 <p class="grouptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius aperiam tenetur
                     laboriosam! Esse, eveniet distinctio veritatis molestias rem aspernatur praesentium.</p>
@@ -240,7 +264,7 @@
 
 
 
-        <div class="back"><a href="#top"><img src="./lib/icons/arrow.png" alt="arrow"></a></div>
+        <div class="back"><a href="#"><img src="./lib/icons/arrow.png" alt="arrow"></a></div>
         </section>
     </main>
 
