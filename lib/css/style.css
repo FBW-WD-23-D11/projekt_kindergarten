@@ -426,9 +426,6 @@ main {
     }
     
     .desktop-nav .mein-dropbtn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
         color: #ffffff;
         font-size: 1.3rem;
         text-decoration: none;
