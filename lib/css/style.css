@@ -9,6 +9,7 @@
 }
 
 
+
 body {
     margin: 0;
     padding: 0;
@@ -186,6 +187,11 @@ main {
 
 .wellcome a {
     text-decoration: none;
+    color: #EA985C;
+}
+
+.wellcome a:hover {
+    color: #f06706;
 }
 
 /* rows */
@@ -202,6 +208,11 @@ main {
     text-align: center;
     color: #EA985C;
     font-size: 1.8rem;
+}
+
+.first-pic p:hover,
+.second-pic p:hover {
+    color: #f06706;
 }
 
 .first-pic a,
@@ -281,14 +292,14 @@ main {
         width: 100%;
         height: 14rem;
         background: rgb(203, 202, 85);
-        background: linear-gradient(180deg, rgba(203, 202, 85, 1) 0%, rgba(160, 191, 85, 1) 25%, rgba(50, 167, 86, 1) 51%, rgba(160, 191, 85, 1) 75%, rgba(203, 202, 85, 1) 100%);
+        background: linear-gradient(180deg, rgba(203, 202, 85, 1) 0%, rgba(160, 191, 85, 1) 25%, rgba(50, 167, 86, 1) 51%, #a0bf55 75%, rgba(203, 202, 85, 1) 100%);
 
     }
 
     .groups>h2 {
         text-align: center;
         padding-top: 1rem;
-        font-size: 1,8rem;
+        font-size: 1, 8rem;
     }
 
     .groups a {
@@ -297,8 +308,12 @@ main {
         font-size: 1.5rem;
     }
 
+    .groups a:hover {
+        color: #abf304;
+    }
+
     .groups p {
-        margin-top:1rem;
+        margin-top: 1rem;
     }
 
     .grouppics {
@@ -390,14 +405,77 @@ main {
     .desktop-nav button {
         height: 2.9rem;
         width: 8rem;
-        border-radius: 15px;
-        background: #EA985C;
+        border-radius: 30px;
+        border: none;
+        background: rgb(50, 167, 86);
+        background: linear-gradient(180deg, rgba(50, 167, 86, 1) 0%, #a0bf55 42%, rgba(203, 202, 85, 1) 100%);
+        transition: background 0.9s ease;
+        box-shadow: 12px -5px 10px #0fa93d;
     }
 
-    .desktop-nav button a {
+    .desktop-nav button:hover {
+        background: #32a756;
+        transition: background 0.9s ease;
+    }
+
+    .desktop-nav button a,
+    .mein-dropbtn {
         color: #ffffff;
         font-size: 1.3rem;
         text-decoration: none;
+        font-weight: 900;
+    }
+
+    /* dorpdown - desktop-nav */
+
+    .mein-dropdown {
+        position: relative;
+        display: inline-block;
+        z-index: 2;
+    }
+
+    .mein-dropbtn {
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mein-dropdown-content {
+        display: none;
+        position: absolute;
+        width: 120px;
+        background: #32a756;
+        text-align: center;
+        border-radius: 10px 10px 10px 10px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+
+    }
+
+    .mein-dropdown-content a {
+        color: #ffffff;
+        text-decoration: none;
+        display: block;
+    }
+
+    .mein-dropdown-content a:hover {
+        background-color: #a0bf55;
+
+    }
+
+    .aktiver-dropdown:hover .mein-dropdown-content {
+        display: block;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+
+    .fa p:after {
+        font-family: "Font Awesome 5 Free";
+        content: "\f0d7";
+        display: inline-block;
+        padding-left: 5px;
+        vertical-align: middle;
+        font-weight: 900;
     }
 
     /* header */
