@@ -1,9 +1,11 @@
 @font-face {
     font-family: "Allura";
-    src: url("../fonts/Allura-Regular.ttf") format("truetype");
+    src: url('../fonts/Allura/Allura-Regular.ttf') format("truetype");
+}
 
-    font-family: "roboto";
-    src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
 }
 
 
@@ -14,14 +16,16 @@ body {
     box-sizing: border-box;
     width: 100vw;
     min-height: 100vh;
-  
-    
+    font-family: roboto, "Roboto-Regular", sans-serif;
+    letter-spacing: 1px;
+
+
 }
 
 /* nav */
-.nav,
-.desktop-nav {
+.nav {
     color: #FEEEBB;
+
 }
 
 .mobil-nav {
@@ -57,6 +61,11 @@ body {
     gap: 10px;
 }
 
+.envelope a {
+    text-decoration: none;
+    color: #FEEEBB;
+}
+
 .time-phone {
     display: flex;
     flex-direction: column;
@@ -79,7 +88,7 @@ body {
 .dropbtn {
     /* background-color: #9fbf55f7; */
     color: #fff;
-    padding: 17px;
+    padding: 32px;
     border: none;
     cursor: pointer;
 }
@@ -117,7 +126,6 @@ body {
     background-color: #bce362;
 }
 
-
 /* header childs */
 
 .childs {
@@ -131,13 +139,13 @@ body {
     margin-top: 1rem;
 }
 
-.childs .text-overlay {
+.childs .text-overlay h1 {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -65%);
     color: #1bdd3b;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-family: "Allura", cursive;
     font-weight: 400;
     font-style: normal;
@@ -263,7 +271,7 @@ main {
     }
 
     /* header */
-    .childs .text-overlay {
+    .childs .text-overlay h1 {
         font-size: 5rem;
     }
 

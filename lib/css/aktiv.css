@@ -4,9 +4,10 @@
 }
 
 @font-face {
-    font-family: "roboto";
-    src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
 }
+
 
 body {
     margin: 0;
@@ -15,7 +16,8 @@ body {
     box-sizing: border-box;
     width: 100vw;
     min-height: 100vh;
-    font-family: "arial";
+    font-family: roboto, "Roboto-Regular", sans-serif;
+    letter-spacing: 1px;
 
 
 }
@@ -86,7 +88,7 @@ body {
 .dropbtn {
     /* background-color: #9fbf55f7; */
     color: #fff;
-    padding: 17px;
+    padding: 32px;
     border: none;
     cursor: pointer;
 }
@@ -137,13 +139,13 @@ body {
     margin-top: 1rem;
 }
 
-.childs .text-overlay {
+.childs .text-overlay h1 {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -65%);
     color: #1bdd3b;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-family: "Allura", cursive;
     font-weight: 400;
     font-style: normal;
@@ -158,7 +160,7 @@ body {
     margin: 0 1rem;
 }
 
-h1 {
+h1 { 
     text-align: center;
     font-size: 2.5rem;
 }
@@ -282,7 +284,7 @@ h2
     }
 
     /* header */
-    .childs .text-overlay {
+    .childs .text-overlay h1{
         font-size: 5rem;
     }
 
