@@ -1,142 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kindergarten St. Martin">
-    <meta name="keywords" content="Kindergarten, St. Martin, Ilmenau, Kinder, Betreuung">
-    <meta name="author" content="Kita St. Martin">
-    <meta name="language" content="de">
-    <meta name="copyright" content="Kita St. Martin">
-    <meta name="page-type" content="Homepage">
-    <title>Kita St. Martin</title>
-    <link rel="icon" href="../lib/icons/kindergarten_logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="./lib/css/vorlage.css">
-    <link rel="stylesheet" href="./lib/css/contact.css">
-    <link rel="stylesheet" type="text/css" href="//use.fontawesome.com/releases/v5.7.2/css/all.css">
-    <link
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Kindergarten St. Martin" />
+        <meta
+            name="keywords"
+            content="Kindergarten, St. Martin, Ilmenau, Kinder, Betreuung"
+        />
+        <meta name="author" content="Kita St. Martin" />
+        <meta name="language" content="de" />
+        <meta name="copyright" content="Kita St. Martin" />
+        <meta name="page-type" content="Homepage" />
+        <title>Kita St. Martin</title>
+        <link
+            rel="icon"
+            href="../lib/icons/kindergarten_logo.png"
+            type="image/x-icon"
+        />
+        <link rel="stylesheet" href="./lib/css/vorlage.css" />
+        <link rel="stylesheet" href="./lib/css/contact.css" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="//use.fontawesome.com/releases/v5.7.2/css/all.css"
+        />
+        <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
             integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
-</head>
+    </head>
 
-<body>
-    <header>
-        <!-- navbar -->
-        <nav class="nav">
+    <body>
+        <header>
+            <!-- navbar -->
+            <nav class="nav">
+                <!-- mobil-nav -->
 
-            <!-- mobil-nav -->
+                <div class="mobil-nav">
+                    <div class="logo">
+                        <img
+                            src="./lib/icons/kindergarten_logo.png"
+                            alt="logo"
+                        />
+                    </div>
 
-            <div class="mobil-nav">
+                    <div class="time-phone">
+                        <div class="phone">
+                            <img
+                                src="./lib/icons/phone-solid.svg"
+                                alt="phone"
+                            />
+                            <p>03677/465620</p>
+                        </div>
 
-                <div class="logo"><img src="./lib/icons/kindergarten_logo.png" alt="logo">
+                        <div class="envelope">
+                            <img
+                                src="./lib/icons/envelope-regular.svg"
+                                alt="umschlag"
+                            />
+                            <p>
+                                <a
+                                    href="mailto:postkasten@kindergarten-st-martin.de"
+                                    title="Mail"
+                                    >postkasten@kindergarten-st-martin.de</a
+                                >
+                            </p>
+                        </div>
+
+                        <div class="time">
+                            <img
+                                src="./lib/icons/clock-regular.svg"
+                                alt="clock"
+                            />
+                            <p>07:00 - 17:00 Uhr</p>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <div class="dropbtn">
+                            <img
+                                class="bars"
+                                src="lib/icons/bars-solid.svg"
+                                alt="menu-button"
+                            />
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="index.html">Startseite</a>
+                            <a href="haus.html">Unser Haus</a>
+                            <a href="neues.html">Neues</a>
+                            <a href="aktiv.html">Aktivitäten</a>
+                            <a href="contact.html">Kontakt</a>
+                            <a href="eltern.html">Elternbeirat</a>
+                            <a href="traeger.html">Träger</a>
+                            <a href="foerder.html">Förderverein</a>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="time-phone">
-                    <div class="phone"><img src="./lib/icons/phone-solid.svg" alt="phone">
-                        <p>03677/465620</p>
+                <!-- desktop-nav -->
+
+                <div class="desktop-nav">
+                    <div class="logo-desktop">
+                        <img
+                            src="./lib/icons/kindergarten_logo.png"
+                            alt="Logo"
+                        />
                     </div>
 
-                    <div class="envelope"><img src="./lib/icons/envelope-regular.svg" alt="umschlag">
-                        <p><a href="mailto:postkasten@kindergarten-st-martin.de"
-                                title="Mail">postkasten@kindergarten-st-martin.de</a></p>
+                    <div class="mein-dropdown">
+                        <a class="mein-dropbtn" href="index.html">
+                            <p>Startseite</p>
+                        </a>
+                        <div class="mein-dropdown-content">
+                            <!-- Dropdown-Optionen hier -->
+                        </div>
                     </div>
 
-                    <div class="time"><img src="./lib/icons/clock-regular.svg" alt="clock">
-                        <p>07:00 - 17:00 Uhr</p>
+                    <div class="mein-dropdown aktiver-dropdown">
+                        <a class="mein-dropbtn fa" href="haus.html">
+                            <p>Das Haus</p>
+                        </a>
+                        <div class="mein-dropdown-content">
+                            <a href="haus.html"><p>Das Haus</p></a>
+                            <a href="team.html">UnserTeam</a>
+                            <a href="aktiv.html">Aktivitäten</a>
+                            <a href="#">Konzept</a>
+                            <a href="neues.html">Neuigkeiten</a>
+                        </div>
                     </div>
 
+                    <div class="mein-dropdown">
+                        <a class="mein-dropbtn" href="neues.html">
+                            <p>Neues</p>
+                        </a>
+                        <div class="mein-dropdown-content">
+                            <!-- Dropdown-Optionen hier -->
+                        </div>
+                    </div>
+
+                    <div class="mein-dropdown">
+                        <a class="mein-dropbtn" href="kontakt.html">
+                            <p>Kontakt</p>
+                        </a>
+                        <div class="mein-dropdown-content">
+                            <!-- Dropdown-Optionen hier -->
+                        </div>
+                    </div>
+
+                    <div class="mein-dropdown aktiver-dropdown">
+                        <a class="mein-dropbtn fa" href="#">
+                            <p>Info's</p>
+                        </a>
+                        <div class="mein-dropdown-content">
+                            <a href="#">Förderverein</a>
+                            <a href="#">Elternbeirat</a>
+                            <a href="#">Träger</a>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="dropdown">
-                    <div class="dropbtn"><img class="bars" src="lib/icons/bars-solid.svg" alt="menu-button"></div>
-                    <div class="dropdown-content">
-                        <a href="index.html">Startseite</a>
-                        <a href="haus.html">Unser Haus</a>
-                        <a href="neues.html">Neues</a>
-                        <a href="aktiv.html">Aktivitäten</a>
-                        <a href="contact.html">Kontakt</a>
-                        <a href="eltern.html">Elternbeirat</a>
-                        <a href="traeger.html">Träger</a>
-                        <a href="foerder.html">Förderverein</a>
-
-                    </div>
+            </nav>
+            <div class="childs">
+                <img src="./lib/img/childs.png" alt="childs" />
+                <div class="text-overlay">
+                    <h1>Kindergarten St. Martin</h1>
                 </div>
-
-
             </div>
-
-            <!-- desktop-nav -->
-
-            <div class="desktop-nav">
-                <div class="logo-desktop"><img src="./lib/icons/kindergarten_logo.png" alt="Logo"></div>
-
-                <div class="mein-dropdown">
-                    <a class="mein-dropbtn" href="index.html">
-                        <p>Startseite</p>
-                    </a>
-                    <div class="mein-dropdown-content">
-                        <!-- Dropdown-Optionen hier -->
-                    </div>
-                </div>
-
-                <div class="mein-dropdown aktiver-dropdown">
-                    <a class="mein-dropbtn fa" href="haus.html">
-                        <p>Das Haus</p>
-                    </a>
-                    <div class="mein-dropdown-content">
-                        <a href="haus.html"><p>Das Haus</p></a>
-                        <a href="team.html">UnserTeam</a>
-                        <a href="aktiv.html">Aktivitäten</a>
-                        <a href="#">Konzept</a>
-                        <a href="neues.html">Neuigkeiten</a>
-                    </div>
-                </div>
-
-                <div class="mein-dropdown">
-                    <a class="mein-dropbtn" href="neues.html">
-                        <p>Neues</p>
-                    </a>
-                    <div class="mein-dropdown-content">
-                        <!-- Dropdown-Optionen hier -->
-                    </div>
-                </div>
-
-                <div class="mein-dropdown">
-                    <a class="mein-dropbtn" href="kontakt.html">
-                        <p>Kontakt</p>
-                    </a>
-                    <div class="mein-dropdown-content">
-                        <!-- Dropdown-Optionen hier -->
-                    </div>
-                </div>
-
-                <div class="mein-dropdown aktiver-dropdown">
-                    <a class="mein-dropbtn fa" href="#">
-                        <p>Info's</p>
-                    </a>
-                    <div class="mein-dropdown-content">
-                        <a href="#">Förderverein</a>
-                        <a href="#">Elternbeirat</a>
-                        <a href="#">Träger</a>
-                    </div>
-                </div>
-            </div>
-
-        </nav>
-        <div class="childs"><img src="./lib/img/childs.png" alt="childs">
-            <div class="text-overlay">
-                <h1>Kindergarten St. Martin</h1>
-            </div>
-
-        </div>
-    </header>
-    <main>
-<!-- Google Maps  -->
+        </header>
+        <main>
+            <!-- Google Maps  -->
             <section class="container">
                 <div class="google_maps">
                     <iframe
@@ -514,94 +549,68 @@
                         Erfahren Sie mehr über uns auf den Folgenden Seiten
                     </h2>
                     <div class="einzel_links_int_seiten">
-                        <a id="link_unser_konzept" href="#">Unser Konzept</a>
-                        <a id="link_unsere_gruppenr" href="#"
+                        <a id="link_unser_konzept" href="kozept.html">Unser Konzept</a>
+                        <a id="link_unsere_gruppenr" href="haus.html"
                             >Unsere Gruppenräume</a
                         >
-                        <a id="unser_team" href="#">Unser Team</a>
+                        <a id="unser_team" href="team.html">Unser Team</a>
                     </div>
                 </section>
             </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <div class="back"><a href="#"><img src="./lib/icons/arrow.png" alt="arrow"></a></div>
-
-    </main>
-
-    <!-- footer -->
-
-    <footer>
-        <div class="bottom">
-            <div class="bottom-l">
-                <p>Christlicher Kindergarten <br>
-                    "St. Martin"<br>
-                    Naumannstraße 17 <br>
-                    98693 Ilmenau</p>
+            <div class="back">
+                <a href="#"><img src="./lib/icons/arrow.png" alt="arrow" /></a>
             </div>
-            <div class="bottom-c">
-                <p>Unsere Kontaktdaten <br>Tel.: 03677/465620 <br>Fax: 03677/204625
-                </p>
+        </main>
+
+        <!-- footer -->
+
+        <footer>
+            <div class="bottom">
+                <div class="bottom-l">
+                    <p>
+                        Christlicher Kindergarten <br />
+                        "St. Martin"<br />
+                        Naumannstraße 17 <br />
+                        98693 Ilmenau
+                    </p>
+                </div>
+                <div class="bottom-c">
+                    <p>
+                        Unsere Kontaktdaten <br />Tel.: 03677/465620 <br />Fax:
+                        03677/204625
+                    </p>
+                </div>
+                <div class="bottom-r">
+                    <ul class="bottom-r">
+                        <li>
+                            <a class="contact" href="#">
+                                <p>Kontakt / Impressum</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="jobs" href="#">
+                                <p>Stellenausschreibungen</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="closing" href="#">
+                                <p>Schliesszeiten</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="download" href="#">
+                                <p>Download</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="data protection" href="#">
+                                <p>Datenschutz</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="bottom-r">
-
-                <ul class="bottom-r">
-                    <li><a class="contact" href="#">
-                            <p>Kontakt / Impressum</p>
-                        </a></li>
-                    <li><a class="jobs" href="#">
-                            <p>Stellenausschreibungen</p>
-                        </a></li>
-                    <li><a class="closing" href="#">
-                            <p>Schliesszeiten</p>
-                        </a></li>
-                    <li><a class="download" href="#">
-                            <p>Download</p>
-                        </a></li>
-                    <li><a class="data protection" href="#">
-                            <p>Datenschutz</p>
-                        </a></li>
-                </ul>
-
-            </div>
-
-        </div>
-
-
-    </footer>
-
-
-</body>
-
+        </footer>
+    </body>
 </html>
