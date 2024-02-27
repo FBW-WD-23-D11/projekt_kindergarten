@@ -4,9 +4,10 @@
 }
 
 @font-face {
-    font-family: "roboto";
-    src: url('../fonts/Roboto/Roboto-Regular.ttf') format("truetype");
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
 }
+
 
 body {
     margin: 0;
@@ -38,7 +39,7 @@ body {
     justify-content: space-between;
 }
 
-.nav p {
+.nav .mobil-nav p {
     margin: .4rem;
 }
 
@@ -149,7 +150,7 @@ body {
     left: 50%;
     transform: translate(-50%, -65%);
     color: #1bdd3b;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-family: "Allura", cursive;
     font-weight: 400;
     font-style: normal;
@@ -158,75 +159,21 @@ body {
     text-align: center;
 }
 
-/* ------ code here ----- */
-
 /* main */
 
+/* your code here */
 
 
 
-h2,
-h3,
-h4,
-.house .housetext,
-.group .grouptext,
-.rooms .grouptext {
-    text-align: center;
-    margin: 2rem 10%;
-    color: #EA985C;
-}
+.construct {display:block;
+margin: 20px auto;
+height: 300px;}
 
 
 
-h2 {
-    font-size: 2.5rem;
-}
-h3 {font-size: 2rem;}
-.house .housetext,
-.house .housetext,
-.group .grouptext,
-.rooms .grouptext {
-    font-size: 1.3rem;
-}
-.group h4{font-size: 1.4rem;}
 
 
-.house img {
-    max-width: 80%;
-    display: block;
-    margin: 1rem auto;
-}
 
-#mouse,
-#rabit,
-#dolphin {
-    border-radius: 50%;
-    height: 6.2rem;
-    width: auto;
-    display: block;
-    margin: 1rem auto;
-}
-
-.grouppictures {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-
-}
-
-.grouppictures img {
-    width: 70%;
-}
-
-.row {
-    width: 70%;
-    display: block;
-    margin: 0 auto;
-}
-
-
-/*  */
 
 
 /* back 2 top */
@@ -242,7 +189,7 @@ h3 {font-size: 2rem;}
     width: auto;
 }
 
-/* footer  */
+/* footer */
 
 .bottom {
     height: 11rem;
@@ -259,6 +206,7 @@ h3 {font-size: 2rem;}
 
 .bottom-r {
     text-align: center;
+    
 }
 
 .bottom-r a {
@@ -268,7 +216,6 @@ h3 {font-size: 2rem;}
     font-size: 1.3rem;
 }
 .bottom-r li {padding-top: 0.2rem;}
-
 
 /* @medias */
 
@@ -283,7 +230,6 @@ h3 {font-size: 2rem;}
     .bottom-r {
         display: none;
     }
-
 }
 
 /* mq 768 till infinity */
@@ -302,15 +248,6 @@ h3 {font-size: 2rem;}
         font-size: 5rem;
     }
 
-    /* code in here */
-
-
-
-
-
-
-
-    /* ---------------------------------- */
     /* footer */
     .bottom {
         display: flex;
@@ -391,6 +328,9 @@ h3 {font-size: 2rem;}
     }
     
     .desktop-nav .mein-dropbtn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         color: #ffffff;
         font-size: 1.3rem;
         text-decoration: none;
@@ -442,25 +382,11 @@ h3 {font-size: 2rem;}
         vertical-align: middle;
         font-weight: 900;
     }
-
+    
     /* header */
     .childs .text-overlay {
         font-size: 7rem;
     }
-
-    /* code here */
-
-    .grouppictures {
-        flex-direction: row;
-        justify-content: center;
-
-    }
-
-    .grouppictures img,
-    .row {
-        width: 30%;
-    }
-
 }
 
 
@@ -470,11 +396,4 @@ h3 {font-size: 2rem;}
     .desktop-nav {
         margin: 1rem 12rem;
     }
-
-    .grouppictures img,
-    .row {
-        /* width:30rem; */
-        height: auto;
-    }
-
 }

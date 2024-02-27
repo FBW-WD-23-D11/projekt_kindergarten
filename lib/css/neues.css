@@ -200,10 +200,6 @@ body {
     background: linear-gradient(180deg, rgba(203, 202, 85, 1) 0%, rgba(160, 191, 85, 1) 52%, rgba(50, 167, 86, 1) 100%);
 }
 
-.bottom a {
-    text-decoration: none;
-}
-
 .bottom p {
     text-align: center;
     padding-top: 1rem;
@@ -211,6 +207,17 @@ body {
     font-size: 1.3rem;
 }
 
+.bottom-r {
+    text-align: center;
+}
+
+.bottom-r a {
+    text-decoration: none;
+    padding-top: 1rem;
+    color: #FEEEBB;
+    font-size: 1.3rem;
+}
+.bottom-r li {padding-top: 0.2rem;}
 
 
 /* @medias */
