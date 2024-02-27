@@ -165,7 +165,9 @@ body {
 /* main */
 
 
-
+.construct {display:block;
+    margin: 20px auto;
+    height: 300px;}
 
 
 
