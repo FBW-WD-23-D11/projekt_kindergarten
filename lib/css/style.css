@@ -91,15 +91,14 @@ body {
     z-index: 2;
 }
 
-/* .dropbtn {
-    /* background-color: #9fbf55f7; */
+.dropbtn {
 color: #fff;
 padding: 32px;
 border: none;
 cursor: pointer;
 }
 
-*/ .dropdown-content {
+ .dropdown-content {
     display: none;
     position: absolute;
     background: #C0C755;
