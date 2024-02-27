@@ -301,7 +301,7 @@ main {
 
     .groups {
         width: 100%;
-        height: 22rem;
+        height: 25rem;
         background: rgb(203, 202, 85);
         background: linear-gradient(180deg, rgba(203, 202, 85, 1) 0%, rgba(160, 191, 85, 1) 25%, rgba(50, 167, 86, 1) 51%, #a0bf55 75%, rgba(203, 202, 85, 1) 100%);
 
@@ -339,7 +339,7 @@ main {
     .grouppics {
         display: flex;
         justify-content: center;
-        gap: 12rem;
+        gap: 10rem;
     }
 
     .grouppics img {
