@@ -17,17 +17,17 @@ iframe {
 
 .hintergrund_beige_gesamt {
     background-color: beige;
+    padding-bottom: 2rem;
 }
 
 /* weitere Informationen unter Google-maps...  */
 .infos_unter_google {
+    background: rgb(50, 167, 86);
+    background: linear-gradient(180deg, rgba(50, 167, 86, 1) 0%, #a0bf55 42%, rgba(203, 202, 85, 1) 100%);
     width: 100%;
     text-align: center;
-    margin-top: 0;
-}
-
-.text_unter_googlemaps {
-    background-color: green;
+    margin-top:  0;
+    padding-bottom: 16px;
 }
 
 .h2_fragen_anmerkungen_wünsche {
@@ -43,7 +43,7 @@ iframe {
 }
 
 .summary_kontaktinfos_unter_googlemaps {
-    margin: 20px 10px;
+    margin: 0px 10px;
 }
 
 #summary_email_kita,
@@ -324,7 +324,7 @@ article {
     }
 
     form {
-        border: 2px ridge green;
+        border: 2px solid green;
     }
 
     label {
@@ -354,7 +354,7 @@ article {
 
     button {
         font-size: 18px;
-        margin-bottom: 20px;
+        /* margin-bottom: 20px; */
     }
 
     button:active {
@@ -404,12 +404,9 @@ article {
 
 @media screen and (min-width: 1024px) {
     /* weitere Informationen unter Google-maps...  */
-    .infos_unter_google {
-        background-color: #95ed9579;
-    }
+    
 
     .text_unter_googlemaps {
-        background-color: green;
         padding-bottom: 15px;
     }
 
@@ -583,7 +580,10 @@ article {
         box-shadow: 5px 5px 15px 5px #327432;
         font-size: 1.4rem;
         padding: 18px 0;
-        margin: 1.8rem 25rem;
+        margin-top: 1.8rem;
+        margin-right: 25rem;
+        margin-bottom: 0;
+        margin-left: 25rem;
     }
 
     #link_unser_konzept:hover,
