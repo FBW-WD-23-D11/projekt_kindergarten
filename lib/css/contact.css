@@ -85,6 +85,7 @@ i {
     width: 80%;
     text-align: center;
     padding: 10px 0;
+    margin-top: 20px;
 }
 
 #h2_ansprechpartner {
@@ -250,6 +251,14 @@ article {
     button {
         font-size: 14px;
         padding: 5px 0;
+    }
+
+    .ansp_feld {
+        margin-top: 20px;
+    }
+
+    .eingabe_name {
+        margin-top: 10px;
     }
 }
 
@@ -461,12 +470,14 @@ article {
         display: flex;
         justify-content: center;
         width: 50%;
-        padding: 6px 0;
+        margin: 0;
+        
     }
 
     .ansprechpartner {
         box-shadow: 5px 5px 15px 5px #327432;
         width: 95%;
+         margin-top: 0;
     }
 
     #kontakt_links_tel:hover,
