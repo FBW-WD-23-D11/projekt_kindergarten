@@ -468,7 +468,8 @@ main {
     .desktop-nav button {
         height: 2.9rem;
         width: 8rem;
-        border-radius: 15px;
+        border-radius: 30px;
+        border: none;
         background: rgb(50, 167, 86);
         background: linear-gradient(180deg, rgba(50, 167, 86, 1) 0%, #a0bf55 42%, rgba(203, 202, 85, 1) 100%);
 
