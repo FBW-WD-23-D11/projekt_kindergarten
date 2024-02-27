@@ -53,6 +53,11 @@ body {
     margin-left: .2rem;
 }
 
+.bars {
+    height: 25px;
+    width: auto;
+}
+
 .phone,
 .envelope,
 .time {
@@ -154,70 +159,48 @@ body {
     text-align: center;
 }
 
-
-
-
-
-
 /* main */
-
-
-
-.aktion {
-    margin: 0 1rem;
+/* your code here !! */
+main {
+    min-height: 100vh;
+    margin-bottom: 200px;
 }
 
-.aktion h2 { 
+.aktion {
+    margin: 0 20px;
+}
+
+.aktion h2,
+h3 {
     text-align: center;
+    color: #f06706;
+}
+
+.aktion h2 {
     font-size: 2.5rem;
 }
 
 .aktion h3 {
-    text-align: center;
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
+    font-size: 2rem;
 }
 
-.aktion h2,
-.aktion h3
- {
-    color: #EA985C;
+.aktion p {
+    color: #f06706;
+    font-size: 1.1rem;
 }
 
-.aktion article {
-    margin-top: 3rem;
-}
-
-.aktion article p {
-    font-size: 1.5rem;
-    color: #EA985C;
-}
-
-#schwimmen-1,
-#schwimmen-2,
-#schwimmen-3 {
-    height: 10rem;
+.aktion img {
+    height: 200px;
     width: auto;
-}
-
-#schwimmen-1 {
-    float: left;
-    margin-right: 16px;
-
 
 }
 
-#schwimmen-2 {
-    float: right;
-    margin-left: 16px;
 
-}
 
-#schwimmen-3 {
-    float: left;
-    margin-right: 16px;
 
-}
+
+
+
 
 
 
@@ -234,7 +217,7 @@ body {
 .back {
     position: relative;
     text-align: end;
-    padding: 0 3rem 2rem 0;
+    padding: 0 3rem 1rem 0;
 }
 
 .back img {
@@ -244,14 +227,11 @@ body {
 
 /* footer */
 
+
 .bottom {
     height: 11rem;
     background: rgb(203, 202, 85);
     background: linear-gradient(180deg, rgba(203, 202, 85, 1) 0%, rgba(160, 191, 85, 1) 52%, rgba(50, 167, 86, 1) 100%);
-}
-
-.bottom a {
-    text-decoration: none;
 }
 
 .bottom p {
@@ -261,13 +241,25 @@ body {
     font-size: 1.3rem;
 }
 
+.bottom-r {
+    text-align: center;
+}
 
+.bottom-r a {
+    text-decoration: none;
+    padding-top: 1rem;
+    color: #FEEEBB;
+    font-size: 1.3rem;
+}
+
+.bottom-r li {
+    padding-top: 0.2rem;
+}
 
 /* @medias */
 
 
 @media screen and (max-width: 767px) {
-
 
     .envelope,
     .logo-desktop,
@@ -276,6 +268,12 @@ body {
     .bottom-r {
         display: none;
     }
+
+    .aktion img {
+        margin: 0 auto;
+        display: block;
+    }
+
 
 }
 
@@ -291,10 +289,24 @@ body {
     }
 
     /* header */
-    .childs .text-overlay h1{
+    .childs .text-overlay h1 {
         font-size: 5rem;
     }
 
+    /* main */
+    /* your code here !! */
+
+    .aktion .schwimmen-1,
+    .aktion .schwimmen-3 {
+        float: left;
+        margin-right: 36px;
+
+    }
+
+    .aktion .schwimmen-2 {
+        float: right;
+        margin-left: 36px;
+    }
 
 
 
@@ -332,10 +344,24 @@ body {
         display: none;
     }
 
+    /* main */
+    /* your code here !! */
+
     .aktion {
-        margin: 0 8rem;
+        margin: 0 80px;
+    }
+
+    .aktion img {
+        height: 200px;
+        width: auto;
+        margin-bottom: 20px;
+    }
+
+    .aktion p {
+        font-size: 1.1rem;
     }
 }
+
 
 /* pc */
 
@@ -344,6 +370,12 @@ body {
     /* nav */
     .logo,
     .dropdown {
+        .aktion img {
+            height: 350px;
+            width: auto;
+            margin-bottom: 50px;
+        }
+
         display: none;
     }
 
@@ -365,72 +397,72 @@ body {
         align-items: center;
     }
 
-    .desktop-nav button {
+    /* desktop dropdown */
+
+    .desktop-nav .mein-dropdown {
+        position: relative;
         height: 2.9rem;
-        width: 8rem;
+        width: 9.5rem;
         border-radius: 30px;
         border: none;
         background: rgb(50, 167, 86);
         background: linear-gradient(180deg, rgba(50, 167, 86, 1) 0%, #a0bf55 42%, rgba(203, 202, 85, 1) 100%);
         transition: background 0.9s ease;
         box-shadow: 12px -5px 10px #0fa93d;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
-    .desktop-nav button:hover {
+    .desktop-nav .mein-dropdown:hover {
         background: #32a756;
-        transition: background 0.9s ease;
     }
 
-    .desktop-nav button a ,
-    .mein-dropbtn
-     {
+
+    .desktop-nav .mein-dropbtn {
         color: #ffffff;
         font-size: 1.3rem;
         text-decoration: none;
-        font-weight: 900;
-    }
-/* dorpdown - desktop-nav */
+        font-family: roboto, "Roboto-Regular", sans-serif;
+        font-weight: 400;
 
-    .mein-dropdown {
-        position: relative;
-        display: inline-block;
-        z-index: 2;
     }
 
-    .mein-dropbtn {
-        background: none;
-        border: none;
-        cursor: pointer;
-    }
-    
-    .mein-dropdown-content {
+    .desktop-nav .mein-dropdown-content {
         display: none;
         position: absolute;
+        top: 100%;
+        left: 0;
         width: 120px;
         background: #32a756;
         text-align: center;
-        border-radius: 10px 10px 10px 10px
-         ;
+        border-radius: 0 0 10px 10px;
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-
+        z-index: 2;
     }
 
-    .mein-dropdown-content a {
-        color: #ffffff;
-        text-decoration: none;
+    .desktop-nav .mein-dropdown:hover .mein-dropdown-content {
         display: block;
     }
 
-    .mein-dropdown-content a:hover {
-        background-color: #a0bf55;
-
+    .desktop-nav .mein-dropdown-content a {
+        color: #ffffff;
+        text-decoration: none;
+        display: block;
+        padding: 5px 16px;
+        text-align: center;
     }
+
+    .desktop-nav .mein-dropdown-content a:hover {
+        background-color: #a0bf55;
+    }
+
     .aktiver-dropdown:hover .mein-dropdown-content {
         display: block;
         left: 50%;
         transform: translateX(-50%);
-
     }
+
     .fa p:after {
         font-family: "Font Awesome 5 Free";
         content: "\f0d7";
@@ -446,12 +478,31 @@ body {
         font-size: 7rem;
     }
 
+    /* main */
+    /* your code here !! */
+
     .aktion {
-        margin: 0 15rem;
+        margin: 0 200px;
+    }
+
+    .aktion img {
+        height: 300px;
+        width: auto;
+
+    }
+
+    .aktion p {
+        font-size: 1.3rem;
+    }
+
+    .text {
+        margin-top: 40px;
     }
 
 
+
 }
+
 
 
 
