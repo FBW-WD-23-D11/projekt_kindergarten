@@ -21,15 +21,12 @@ body {
     letter-spacing: 1px;
 }
 
-
 /* main */
 main {
     flex: 1;
 }
 
-
 /* wellcome */
-
 .welcome-h2 {
     font-size: 2.5rem;
 }
@@ -95,10 +92,18 @@ main {
 
 /* @medias */
 
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 767px) {
+
+    .groups,
+    .second-pic {
+        display: none;
+    }
+
+}
 
 
 /* mq 768 till infinity */
+
 @media screen and (min-width: 768px) {
 
 
@@ -110,6 +115,9 @@ main {
         background: rgb(203, 202, 85);
         background: linear-gradient(180deg, rgba(203, 202, 85, 1) 0%, rgba(160, 191, 85, 1) 25%, rgba(50, 167, 86, 1) 51%, #a0bf55 75%, rgba(203, 202, 85, 1) 100%);
 
+    }
+    .groups  ul {
+        list-style: none;
     }
 
     .groups>h2 {
@@ -178,24 +186,22 @@ main {
 
 
 
-
+ 
 }
 
 
-
-
-
 /* tablet */
-@media screen and (min-width: 768px) and (max-width: 1023px) {}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
 
 
+}
 
 /* pc */
-@media screen and (min-width: 1024px) {}
+@media screen and (min-width: 1024px) {
 
+  
+}
 
+@media screen and (min-width: 1600px) {
 
-
-
-
-@media screen and (min-width: 1600px) {}
+}
