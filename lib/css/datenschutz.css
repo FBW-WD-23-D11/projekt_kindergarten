@@ -20,224 +20,10 @@ body {
     display: flex;
     flex-direction: column;
 }
-
-.nav {
-    color: #FEEEBB;
-
-}
-
-.mobil-nav {
-    width: 100%;
-    height: 6rem;
-    padding: 10px 0;
-    background: rgb(50, 167, 86);
-    background: linear-gradient(180deg, rgba(50, 167, 86, 1) 0%, #a0bf55 42%, rgba(203, 202, 85, 1) 100%);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.nav p {
-    margin: .4rem;
-}
-
-.nav .mobil-nav p {
-    font-size: 1.2rem;
-}
-
-.mobil-nav .logo img {
-    height: 7rem;
-    width: auto;
-    margin-left: .2rem;
-}
-
-.bars {
-    height: 25px;
-    width: auto;
-}
-
-.phone,
-.envelope,
-.time {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.time-phone {
-    display: flex;
-    flex-direction: column;
-}
-
-.time-phone img {
-    height: 1rem;
-}
-
-/* dropdown menu */
-
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-    right: .6rem;
-    z-index: 2;
-}
-
-.dropbtn {
-    /* background-color: #9fbf55f7; */
-    color: #fff;
-    padding: 17px;
-    border: none;
-    cursor: pointer;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background: #C0C755;
-    text-align: center;
-    border-radius: 0 0 10px 10px;
-    transform: scaleY(0) translateX(-100%);
-    transition: transform 10.3s ease-in-out;
-
-}
-
-.dropdown-content a {
-    color: #fff;
-    padding: 5px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {
-    background-color: #a0bf55;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-    transform: scaleY(1) translateX(-40%);
-    transition: transform 1.3s ease-in-out;
-    /* Open the dropdown with scaleY transition, move left */
-}
-
-.dropdown:hover .dropbtn {
-    background-color: #bce362;
-}
-
-/* -------- */
-/* header childs */
-.childs {
-    position: relative;
-
-}
-
-.childs img {
-    display: block;
-    width: 100%;
-    margin-top: 1rem;
-}
-
-.childs .text-overlay h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -100%);
-    color: #1bdd3b;
-    font-size: 3rem;
-    font-family: "Allura", cursive;
-    font-weight: 400;
-    font-style: normal;
-    text-shadow: 1px 0px 0px rgb(239, 31, 118), 1px 0px 0px rgb(239, 31, 118), 0px -1px 0px rgb(239, 31, 118), 0px 1px 0px rgb(239, 31, 118), 0px 0px 10px rgb(239, 31, 118);
-    font-weight: bold;
-    text-align: center;
-    width: 100%;
-}
-
-
+/*  your code here !! */
 /* main */
 main {
     flex: 1;
-
-}
-
-/* wellcome */
-.welcome-h1 {
-    font-size: 1.8rem;
-}
-
-.welcome-h1,
-.interest {
-    text-align: center;
-    color: #EA985C;
-}
-
-.wellcome img {
-    display: block;
-    margin: 0 auto;
-}
-
-.wellcome p {
-    font-size: 1.7rem;
-}
-
-.house {
-    max-width: 80%;
-}
-
-.wellcome a {
-    text-decoration: none;
-}
-
-/* rows */
-
-.row {
-    height: 12rem;
-    width: 12rem;
-    display: block;
-    margin: 1rem auto;
-}
-
-.first-pic p,
-.second-pic p {
-    text-align: center;
-    color: #EA985C;
-    font-size: 1.8rem;
-}
-
-.first-pic a,
-.second-pic a {
-    text-decoration: none;
-}
-
-.back {
-    position: relative;
-    text-align: end;
-    padding: 0 3rem 2rem 0;
-}
-
-.back img {
-    height: 2rem;
-    width: auto;
-}
-
-/* footer */
-
-.bottom {
-    height: 11rem;
-    background: rgb(203, 202, 85);
-    background: linear-gradient(180deg, rgba(203, 202, 85, 1) 0%, rgba(160, 191, 85, 1) 52%, rgba(50, 167, 86, 1) 100%);
-}
-
-.bottom a {
-    text-decoration: none;
-}
-
-.bottom p {
-    text-align: center;
-    padding-top: 1rem;
-    color: #FEEEBB;
-    font-size: 1.3rem;
-}
 
 /*-------neu----------*/
 .grid {
@@ -291,15 +77,7 @@ main {
 @media screen and (max-width: 767px) {
 
 
-    .envelope,
-    .logo-desktop,
-    .desktop-nav,
-    .groups,
-    .bottom-c,
-    .bottom-r,
-    .second-pic {
-        display: none;
-    }
+
 
 }
 
@@ -307,101 +85,9 @@ main {
 
 @media screen and (min-width: 768px) {
 
-    /* nav */
-    .time-phone {
-        display: flex;
-        flex-direction: row;
-        gap: 8rem;
-    }
+    
 
-    /* header */
-    .childs .text-overlay {
-        font-size: 5rem;
-    }
-
-    .childs img {
-        display: block;
-        height: 100%;
-        width: 100%;
-
-    }
-
-    /* groups */
-
-    .groups {
-        width: 100%;
-        height: 14rem;
-        background: rgb(203, 202, 85);
-        background: linear-gradient(180deg, rgba(203, 202, 85, 1) 0%, rgba(160, 191, 85, 1) 25%, rgba(50, 167, 86, 1) 51%, rgba(160, 191, 85, 1) 75%, rgba(203, 202, 85, 1) 100%);
-
-    }
-
-    .groups h2 {
-        text-align: center;
-        padding-top: 1rem;
-
-    }
-
-    .groups a {
-        color: green;
-        text-decoration: none;
-        font-size: 1.4rem;
-    }
-
-    .groups p {
-        margin: 0;
-    }
-
-    .grouppics {
-        display: flex;
-        justify-content: center;
-        padding-top: rem;
-        gap: 12rem;
-    }
-
-    .grouppics img {
-        border-radius: 50%;
-        height: 6.2rem;
-        width: auto;
-
-    }
-
-    /* rows */
-
-    .first-pic,
-    .second-pic {
-        display: flex;
-        justify-content: space-evenly;
-
-    }
-
-
-
-
-    /* footer */
-    .bottom {
-        display: flex;
-        justify-content: space-around;
-        align-items: flex-start;
-    }
-
-    .bottom-r {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        padding: .1rem 0;
-        margin-top: 1rem;
-    }
-
-    .bottom ul li a {
-        color: #FEEEBB;
-        font-size: 1.3rem;
-    }
-
-    .bottom ul {
-        list-style: none;
-    }
+    
 }
 
 
@@ -409,20 +95,7 @@ main {
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 
-    /* nav */
-
-    .envelope,
-    .logo-desktop,
-    .desktop-nav {
-        display: none;
-    }
-
-    .logo img {
-        display: block;
-        height: 7rem;
-        width: auto;
-        margin-left: .2rem;
-    }
+   
 
     #datenschutz {
         display: flex;
@@ -449,57 +122,6 @@ main {
 
 @media screen and (min-width: 1024px) {
 
-    /* nav */
-    .logo,
-    .dropdown {
-        display: none;
-    }
-
-    .logo-desktop img {
-        height: 12rem;
-        width: auto;
-    }
-
-    .mobil-nav {
-        display: flex;
-        justify-content: center;
-        height: 3rem;
-    }
-
-    .desktop-nav {
-        margin: 1rem 1rem;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-
-    }
-
-    .desktop-nav button {
-        height: 2.9rem;
-        width: 8rem;
-        border-radius: 30px;
-        border: none;
-        background: rgb(50, 167, 86);
-        background: linear-gradient(180deg, rgba(50, 167, 86, 1) 0%, #a0bf55 42%, rgba(203, 202, 85, 1) 100%);
-
-    }
-
-    .desktop-nav button a {
-        color: #ffffff;
-        font-size: 1.3rem;
-        text-decoration: none;
-    }
-
-    /* header */
-    .childs .text-overlay {
-        font-size: 7rem;
-    }
-
-
-    .house {
-        max-width: 50%;
-        height: auto;
-    }
 
     #datenschutz {
         display: flex;
@@ -517,8 +139,4 @@ main {
     }
 }
 
-@media screen and (min-width: 1600px) {
-    .desktop-nav {
-        margin: 1rem 12rem;
-    }
-}
+@media screen and (min-width: 1600px) {}
