@@ -160,14 +160,14 @@ body {
 }
 
 /* main */
-
+main {
+    flex: 1;
+}
 /* your code here */
 
 
 
-.construct {display:block;
-margin: 20px auto;
-height: 300px;}
+
 
 
 
