@@ -21,11 +21,9 @@ body {
     flex-direction: column;
 }
 
-
-/* nav */
-.nav,
-.desktop-nav {
+.nav {
     color: #FEEEBB;
+
 }
 
 .mobil-nav {
@@ -51,6 +49,11 @@ body {
     height: 7rem;
     width: auto;
     margin-left: .2rem;
+}
+
+.bars {
+    height: 25px;
+    width: auto;
 }
 
 .phone,
@@ -382,12 +385,21 @@ main {
         align-items: flex-start;
     }
 
-    .bottom-r p {
+    .bottom-r {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
         padding: .1rem 0;
-        margin: 0;
+        margin-top: 1rem;
     }
 
-    ul {
+    .bottom ul li a {
+        color: #FEEEBB;
+        font-size: 1.3rem;
+    }
+
+    .bottom ul {
         list-style: none;
     }
 }
@@ -465,8 +477,11 @@ main {
     .desktop-nav button {
         height: 2.9rem;
         width: 8rem;
-        border-radius: 15px;
-        background: #EA985C;
+        border-radius: 30px;
+        border: none;
+        background: rgb(50, 167, 86);
+        background: linear-gradient(180deg, rgba(50, 167, 86, 1) 0%, #a0bf55 42%, rgba(203, 202, 85, 1) 100%);
+
     }
 
     .desktop-nav button a {
