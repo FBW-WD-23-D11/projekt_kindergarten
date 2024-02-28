@@ -374,7 +374,7 @@ main {
         transform: translateX(-50%);
     }
     
-    .fa p:after {
+    .fa:after {
         font-family: "Font Awesome 5 Free";
         content: "\f0d7";
         display: inline-block;
