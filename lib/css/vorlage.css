@@ -18,35 +18,64 @@ body {
     min-height: 100vh;
     font-family: roboto, "Roboto-Regular", sans-serif;
     letter-spacing: 1px;
-    
+
+
 }
+
+
+
+/* main */
+
+/* your code here */
+
+
+
+.construct {display:block;
+margin: 20px auto;
+height: 300px;}
+
+
+
+
+
+
 
 
 
 /* @medias */
+
+
 @media screen and (max-width: 767px) {
 
 
+    
+
 }
-
-
 
 /* mq 768 till infinity */
+
 @media screen and (min-width: 768px) {
+
+   
+
+
+
+
+
+
+
 
 
 }
-
-
 
 
 /* tablet */
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 
 
-}
-
 /* pc */
+
 @media screen and (min-width: 1024px) {
 
 
@@ -56,4 +85,5 @@ body {
 
 
 @media screen and (min-width: 1600px) {
+ 
 }
