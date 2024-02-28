@@ -12,7 +12,7 @@
     <meta name="page-type" content="Homepage">
     <title>Kita St. Martin</title>
     <link rel="icon" href="./lib/icons/kindergarten_logo.png" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="./lib/css/header-footer.css">
+    <link rel="stylesheet" href="./lib/css/header-footer.css">
     <link rel="stylesheet" href="./lib/css/datenschutz.css" type="text/css">
     <script src="./lib/js/datenschutz.js"></script>
 
@@ -71,22 +71,23 @@
 
             <div class="desktop-nav">
                 <div class="logo-desktop"><img src="./lib/icons/kindergarten_logo.png" alt="Logo"></div>
-                <!--Direkter Link innerhalb des Button-Tags-->
-                <div class="mein-dropdown">
-                    <button class="mein-dropbtn"><a href="index.html">Startseite</a>
-                    </button>
 
+                <div class="mein-dropdown">
+                    <a class="mein-dropbtn" href="index.html">
+                        Startseite
+                    </a>
                     <div class="mein-dropdown-content">
                         <!-- Dropdown-Optionen hier -->
                     </div>
                 </div>
-                <!--Element ist in diesem Kontext p als untergeordnetes Element des Elements nicht zulässig-->
-                <!--Das Attribut .html ist nicht als XML 1.0 serialisierbar-->
+
                 <div class="mein-dropdown aktiver-dropdown">
-                    <button class="mein-dropbtn fa"><a href="haus.html">Das Haus</a></button>
+                    <a class="mein-dropbtn fa" href="haus.html">
+                        Das Haus
+                    </a>
                     <div class="mein-dropdown-content">
-                        <a href="haus.html">Das Haus</a>
-                        <a href="team.html">Unser Team</a>
+                        <a href="haus.html"> Das Haus</a>
+                        <a href="team.html">UnserTeam</a>
                         <a href="aktiv.html">Aktivitäten</a>
                         <a href="konzept.html">Konzept</a>
                         <a href="neues.html">Neuigkeiten</a>
@@ -94,21 +95,27 @@
                 </div>
 
                 <div class="mein-dropdown">
-                    <button class="mein-dropbtn"><a href="neues.html">Neues</a></button>
+                    <a class="mein-dropbtn" href="neues.html">
+                        Neues
+                    </a>
                     <div class="mein-dropdown-content">
                         <!-- Dropdown-Optionen hier -->
                     </div>
                 </div>
 
                 <div class="mein-dropdown">
-                    <button class="mein-dropbtn"><a href="contakt.html">Kontakt</a></button>
+                    <a class="mein-dropbtn" href="contact.html">
+                        Kontakt
+                    </a>
                     <div class="mein-dropdown-content">
                         <!-- Dropdown-Optionen hier -->
                     </div>
                 </div>
 
                 <div class="mein-dropdown aktiver-dropdown">
-                    <button class="mein-dropbtn fa"><a href="info's.html"></a>Info's</button>
+                    <a class="mein-dropbtn fa" href="#">
+                        Info's
+                    </a>
                     <div class="mein-dropdown-content">
                         <a href="foerder.html">Förderverein</a>
                         <a href="eltern.html">Elternbeirat</a>

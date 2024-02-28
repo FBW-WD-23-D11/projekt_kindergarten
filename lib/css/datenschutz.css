@@ -1,11 +1,11 @@
 @font-face {
     font-family: "Allura";
-    src: url("../fonts/Allura-Regular.ttf") format("truetype");
+    src: url("../fonts/Allura/Allura-Regular.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "roboto";
-    src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+    src: url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
 }
 
 
@@ -24,7 +24,7 @@ body {
 /* main */
 main {
     flex: 1;
-
+}
 /*-------neu----------*/
 .grid {
     display: grid;
