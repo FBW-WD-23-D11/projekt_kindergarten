@@ -263,8 +263,8 @@ main {
 }
 .bottom-r li {padding-top: 0.2rem;}
 
-/* @medias */
 
+/* @medias */
 
 @media screen and (max-width: 767px) {
 
@@ -280,6 +280,7 @@ main {
     }
 
 }
+
 
 /* mq 768 till infinity */
 
@@ -310,7 +311,7 @@ main {
     .groups>h2 {
         text-align: center;
         padding-top: 1.5rem;
-        font-size: 2.5rem;
+        font-size: 2.4rem;
         color: #ffffff;
 
     }
