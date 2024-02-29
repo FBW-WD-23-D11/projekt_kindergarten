@@ -128,7 +128,7 @@ body {
 }
 
 .dropdown:hover .dropbtn {
-    background-color: #bce362;
+    /* background-color: #bce362; */
 }
 
 /* header childs */
