@@ -128,7 +128,7 @@ body {
 }
 
 .dropdown:hover .dropbtn {
-    background-color: #bce362;
+    /* background-color: #9ec050; */
 }
 
 /* header childs */
@@ -160,14 +160,15 @@ body {
 }
 
 /* main */
+main {
+    flex: 1;
+}
 
 /* your code here */
 
 
 
-.construct {display:block;
-margin: 20px auto;
-height: 300px;}
+
 
 
 
@@ -206,7 +207,7 @@ height: 300px;}
 
 .bottom-r {
     text-align: center;
-    
+
 }
 
 .bottom-r a {
@@ -215,7 +216,10 @@ height: 300px;}
     color: #FEEEBB;
     font-size: 1.3rem;
 }
-.bottom-r li {padding-top: 0.2rem;}
+
+.bottom-r li {
+    padding-top: 0.2rem;
+}
 
 /* @medias */
 
@@ -307,7 +311,7 @@ height: 300px;}
         justify-content: space-evenly;
         align-items: center;
     }
-    
+
     .desktop-nav .mein-dropdown {
         position: relative;
         height: 2.9rem;
@@ -322,11 +326,11 @@ height: 300px;}
         align-items: center;
         justify-content: center;
     }
-    
+
     .desktop-nav .mein-dropdown:hover {
         background: #32a756;
     }
-    
+
     .desktop-nav .mein-dropbtn {
         display: flex;
         align-items: center;
@@ -336,13 +340,13 @@ height: 300px;}
         text-decoration: none;
         font-family: roboto, "Roboto-Regular", sans-serif;
         font-weight: 400;
-      
+
     }
-    
+
     .desktop-nav .mein-dropdown-content {
         display: none;
         position: absolute;
-        top: 100%; 
+        top: 100%;
         left: 0;
         width: 120px;
         background: #32a756;
@@ -351,11 +355,11 @@ height: 300px;}
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
         z-index: 2;
     }
-    
+
     .desktop-nav .mein-dropdown:hover .mein-dropdown-content {
         display: block;
     }
-    
+
     .desktop-nav .mein-dropdown-content a {
         color: #ffffff;
         text-decoration: none;
@@ -363,18 +367,18 @@ height: 300px;}
         padding: 5px 16px;
         text-align: center;
     }
-    
+
     .desktop-nav .mein-dropdown-content a:hover {
         background-color: #a0bf55;
     }
-    
+
     .aktiver-dropdown:hover .mein-dropdown-content {
         display: block;
         left: 50%;
         transform: translateX(-50%);
     }
-    
-    .fa p:after {
+
+    .fa:after {
         font-family: "Font Awesome 5 Free";
         content: "\f0d7";
         display: inline-block;
@@ -382,7 +386,7 @@ height: 300px;}
         vertical-align: middle;
         font-weight: 900;
     }
-    
+
     /* header */
     .childs .text-overlay {
         font-size: 7rem;
