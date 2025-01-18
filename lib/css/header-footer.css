@@ -335,10 +335,16 @@ main {
   .desktop-nav .mein-dropdown-content {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 90%;
     left: 0;
-    width: 120px;
-    background: #32a756;
+    width: 130px;
+    background: linear-gradient(
+      180deg,
+      rgba(50, 167, 86, 1) 33%,
+      #a0bf55 66%,
+      rgba(203, 202, 85, 1) 100%
+    );
+
     text-align: center;
     border-radius: 0 0 10px 10px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
