@@ -1,4 +1,4 @@
-@font-face {
+ font-face {
     font-family: "Allura";
     src: url('../fonts/Allura/Allura-Regular.ttf') format("truetype");
 }
@@ -34,7 +34,7 @@ main {
 .wellcome-h2,
 .interest {
     text-align: center;
-    color: #EA985C;
+    color: #d28d5c;
 }
 
 .wellcome img {
